@@ -298,7 +298,7 @@ a:hover { color: #fff; }
 }
 
 a.nestedItem:hover,
-a.nestedItem:focus-visible { filter: brightness(1.06); }
+a.nestedItem:focus-visible { filter: brightness(1.09); }
 
 .discordLink:hover { filter: brightness(1.14); }
 
