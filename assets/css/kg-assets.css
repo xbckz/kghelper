@@ -297,7 +297,6 @@ a:hover { color: #fff; }
   border-left: 1px solid rgba(255,255,255,.15);
 }
 
-.nestedItem:hover,
 .discordLink:hover { filter: brightness(1.14); }
 
 .nestedItem .menuTitle { padding: 12px 15px; }

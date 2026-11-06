@@ -305,11 +305,6 @@ body::after {
     cursor: pointer;
 }
 
-/* Keep hover consistent with your design */
-.nestedItem:hover {
-    background-color: #111111;
-}
-
 /* Style inner text + arrow alignment */
 .nestedItem .menuTitle {
     display: flex;
