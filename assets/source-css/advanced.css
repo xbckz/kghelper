@@ -1,0 +1,146 @@
+/* Buttons */
+.button {
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 2px #000;
+    border: none;
+}
+/*.button:active,*/
+.button.active {
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 10px #000;
+}
+.btnDisabled,
+.btnDisabled:active,
+.btnDisabled.active {
+    -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.25), inset 0 0 5px 2px rgba(0, 0, 0, 0.5), 0 1px 2px #000;
+}
+
+
+/* Tutorial: Hints/Description Box */
+#descBox {
+    background: #110F0F -webkit-gradient(linear, 0 0, 0 100%, from(#110F0F), to(#3D3131));
+    -webkit-box-shadow: 0 2px 8px #111;
+}
+
+
+/* Page: Missions */
+#missions .mission.animating,
+#missions .mission.animating .button,
+#missions .mission.animating .missionProgress,
+#missions .mission.animating .missionProgressBar { -webkit-box-shadow: none; }
+.missionProgress {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.05);
+}
+.missionProgressBar {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.15);
+}
+
+
+/* Missions: Required Items */
+.fightItem {
+    -webkit-box-shadow: 0 0 2px #000;
+}
+
+
+/* Page: Character Info (Stats/Enhancements Overview) */
+.enhanceitem {
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+
+/* Page: Character Skills */
+#skillslist {
+    -webkit-box-shadow: 0 0 4px #111;
+}
+
+
+/* Footer */
+#footer {
+    -webkit-box-shadow: inset 0 1px 0 hsl(0, 0%, 26%);
+}
+
+
+/* Page: Wheel of Fortune */
+
+.lotteryPanel {
+    -webkit-box-shadow: 0 0 10px #000;
+}
+.lotteryCard {
+    -webkit-box-shadow: 0 2px 5px #000;
+}
+
+.msgBox_overlay {
+    -webkit-box-shadow: 0 0 20px 10px #000;
+    box-shadow: 0 0 20px 10px #000;
+}
+
+.tabs {
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.tabs .active a {
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.btnDelete {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.75);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.75);
+}
+
+#worldmap {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 5px 10px rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 5px 10px rgba(255, 255, 255, 0.15);
+}
+
+.btnSlim {
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4);
+}
+
+.meta a {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(hsla(0, 5%, 55%, 0.3)), to(hsla(0, 5%, 35%, 0.3)));
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+}
+
+.moreNav.moreNav_dark {
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+}
+
+#flavorHeader {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 5px 10px rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 5px 10px rgba(255, 255, 255, 0.15);
+}
+
+.pagination input[type=submit] {
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+}
+
+#highscore table {
+    -webkit-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+}
+
+.lightbox {
+    -webkit-box-shadow: 0 0 20px 10px #000;
+    box-shadow: 0 0 20px 10px #000;
+}
+
+#storyBox {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.3), 0 5px 10px rgba(255,255,255,0.15);
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,0.3), 0 5px 10px rgba(255,255,255,0.15);
+}
+
+.featuredGame {
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.25);
+}
+
+.btnInstall {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.5), inset 0 1px 0 rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px #000;
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.5), inset 0 1px 0 rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px #000;
+}
+
+#debugbar a.collapse {
+    -webkit-box-shadow:rgba(255, 255, 255, 0.0980392) 0 1px 0 inset, rgba(255, 255, 255, 0.0745098) 0 1px 0;
+    box-shadow:rgba(255, 255, 255, 0.0980392) 0 1px 0 inset, rgba(255, 255, 255, 0.0745098) 0 1px 0;
+}

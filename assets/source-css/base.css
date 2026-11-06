@@ -1,0 +1,553 @@
+#debugbar {
+    width: 100%;
+    height: 40px;
+    background-color: #111111;
+    background-image: -webkit-linear-gradient(top, #222222, #111111);
+    z-index: 1;
+    border: 1px #252525 solid;
+    border-width: 0px 0px 1px 0px;
+}
+
+#debugbar div.container {
+    height: 40px;
+    padding: 0px;
+}
+
+#debugbar a.collapse {
+    float: left;
+    padding: 7px 10px;
+    vertical-align: middle;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color:#0E0E0E;
+    background-image:-webkit-linear-gradient(top, #151515, #040404);
+    background-repeat:repeat no-repeat;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.0980392) rgba(0, 0, 0, 0.0980392) rgba(0, 0, 0, 0.247059);
+    color:#FFFFFF;
+    text-shadow:rgba(0, 0, 0, 0.247059) 0 -1px 0;
+    margin: 4px 3px;
+}
+
+#debugbar a.collapse span.line {
+    display: block;
+    height: 2px;
+    width: 18px;
+    background-color: #fff;
+    margin: 2px 0px;
+}
+
+#debugbar div.container .navigation {
+    float: right;
+    max-width: 273px;
+}
+
+#debugbar div.container ul {
+    list-style-type: none;
+    float: right;
+}
+
+#debugbar div.container ul li {
+    float: left;
+}
+
+#debugbar div.container ul li span.language_name {
+    display: none;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+#debugbar div.container .language_selection {
+    margin: 0px;
+}
+
+#debugbar div.container select {
+    background-color: #0E0E0E;
+    border: 1px solid #252525;
+    color: #fff;
+    height: 28px;
+    padding: 2px;
+    width: 80px;
+    float: right;
+    vertical-align: middle;
+}
+
+/* Footer */
+
+#footer {
+    clear: both;
+    width: 100%;
+    height: 48px;
+    border-top: 1px solid #000;
+    background-color: #000;
+    background: #333 -webkit-gradient(linear, 0 0, 0 100%, from(#333), to(#000));
+}
+.iscroll #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 400;
+}
+
+/* Footer: Tab Bar */
+
+#tabBar {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 320px;
+    height: 48px;
+}
+#tabBar li {
+    display: block;
+    float: left;
+    position: relative;
+}
+#tabBar a {
+    display: block;
+    width: 64px;
+    height: 48px;
+    float: left;
+    padding: 0px 0 0 0;
+    text-decoration: none;
+    font-size: 10px;
+    color: #c6c6c5;
+    text-align: center;
+    position: relative;
+}
+#tabBar a:hover {
+    color: #fff;
+}
+#tabBar a span {
+    display: block;
+    margin: 2px 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    height: 12px;
+    padding: 32px 0 0 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#tabBar #tabBarTab1 a span { background-position: 0 0; }
+#tabBar #tabBarTab2 a span { background-position: -60px 0; }
+#tabBar #tabBarTab3 a span { background-position: -120px 0; }
+#tabBar #tabBarTab4 a span { background-position: -180px 0; }
+#tabBar #tabBarTab5 a span { background-position: -240px 0; }
+
+#tabBar .active a span,
+#tabBar a:hover span {
+    color: #fff;
+    background-color: hsl(0, 0%, 21%);
+}
+
+#tabBar #tabBarTab1.active a span { background-position: 0 -50px, 0 0; }
+#tabBar #tabBarTab2.active a span { background-position: -60px -50px, 0 0; }
+#tabBar #tabBarTab3.active a span { background-position: -120px -50px, 0 0; }
+#tabBar #tabBarTab4.active a span { background-position: -180px -50px, 0 0; }
+#tabBar #tabBarTab5.active a span { background-position: -240px -50px, 0 0; }
+
+#tabBar .active .pill {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0;
+    padding: 0 4px;
+    height: auto;
+    line-height: 14px;
+    background-color: #e52e2e;
+    background: #e52e2e -webkit-gradient(linear, 0 0, 0 100%, from(#e52e2e), to(#bf1313));
+    background-position: 0 0 !important;
+    border: 2px solid #fff;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    z-index: 200;
+}
+
+/* TabBar: Disabled Status (Tutorial) */
+
+#tabBar .disabled:before {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 48px;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+#tabBar .disabled a {
+    opacity: 0.25;
+}
+
+/* Language/Country Flag-Icons */
+.iconLang {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 4px;
+    margin: 0 2px 0 0;
+}
+.iconLang_aa{ background-position: 0px 0px;  } 
+.iconLang_ad{ background-position: 0px -17px;  } 
+.iconLang_ae{ background-position: 0px -34px;  } 
+.iconLang_af{ background-position: 0px -51px;  } 
+.iconLang_ag{ background-position: 0px -68px;  } 
+.iconLang_ai{ background-position: 0px -85px;  } 
+.iconLang_al{ background-position: 0px -102px;  } 
+.iconLang_am{ background-position: 0px -119px;  } 
+.iconLang_an{ background-position: 0px -136px;  } 
+.iconLang_ao{ background-position: 0px -153px;  } 
+.iconLang_aq{ background-position: 0px -170px;  } 
+.iconLang_ar{ background-position: 0px -187px;  } 
+.iconLang_as{ background-position: 0px -204px;  } 
+.iconLang_at{ background-position: 0px -221px;  } 
+.iconLang_au{ background-position: 0px -238px;  } 
+.iconLang_aw{ background-position: 0px -255px;  } 
+.iconLang_az{ background-position: 0px -272px;  } 
+.iconLang_ba{ background-position: 0px -289px;  } 
+.iconLang_bb{ background-position: 0px -306px;  } 
+.iconLang_bd{ background-position: 0px -323px;  } 
+.iconLang_be{ background-position: 0px -340px;  } 
+.iconLang_bf{ background-position: 0px -357px;  } 
+.iconLang_bg{ background-position: 0px -374px;  } 
+.iconLang_bh{ background-position: 0px -391px;  } 
+.iconLang_bi{ background-position: 0px -408px;  } 
+.iconLang_bj{ background-position: 0px -425px;  } 
+.iconLang_bm{ background-position: 0px -442px;  } 
+.iconLang_bn{ background-position: 0px -459px;  } 
+.iconLang_bo{ background-position: 0px -476px;  } 
+.iconLang_br{ background-position: 0px -493px;  } 
+.iconLang_bs{ background-position: 0px -510px;  } 
+.iconLang_bt{ background-position: 0px -527px;  } 
+.iconLang_bw{ background-position: 0px -544px;  } 
+.iconLang_by{ background-position: 0px -561px;  } 
+.iconLang_bz{ background-position: 0px -578px;  } 
+.iconLang_ca{ background-position: 0px -595px;  } 
+.iconLang_cd{ background-position: 0px -612px;  } 
+.iconLang_cf{ background-position: 0px -629px;  } 
+.iconLang_cg{ background-position: 0px -646px;  } 
+.iconLang_ch{ background-position: 0px -663px;  } 
+.iconLang_ci{ background-position: 0px -680px;  } 
+.iconLang_ck{ background-position: 0px -697px;  } 
+.iconLang_cl{ background-position: 0px -714px;  } 
+.iconLang_cm{ background-position: 0px -731px;  } 
+.iconLang_cn, .iconLang_zh{ background-position: 0px -748px;  } 
+.iconLang_co{ background-position: 0px -765px;  } 
+.iconLang_cr{ background-position: 0px -782px;  } 
+.iconLang_cu{ background-position: 0px -799px;  } 
+.iconLang_cv{ background-position: 0px -816px;  } 
+.iconLang_cy{ background-position: 0px -833px;  } 
+.iconLang_cz{ background-position: 0px -850px;  } 
+.iconLang_de{ background-position: 0px -867px;  } 
+.iconLang_dj{ background-position: 0px -884px;  } 
+.iconLang_dk, .iconLang_da{ background-position: 0px -901px;  } 
+.iconLang_dm{ background-position: 0px -918px;  } 
+.iconLang_do{ background-position: 0px -935px;  } 
+.iconLang_dz{ background-position: 0px -952px;  } 
+.iconLang_ec{ background-position: 0px -969px;  } 
+.iconLang_ee{ background-position: 0px -986px;  } 
+.iconLang_eg{ background-position: -17px 0px;  } 
+.iconLang_eh{ background-position: -17px -17px;  } 
+.iconLang_er{ background-position: -17px -34px;  } 
+.iconLang_es{ background-position: -17px -51px;  } 
+.iconLang_et{ background-position: -17px -68px;  } 
+.iconLang_fi{ background-position: -17px -85px;  } 
+.iconLang_fj{ background-position: -17px -102px;  } 
+.iconLang_fm{ background-position: -17px -119px;  } 
+.iconLang_fo{ background-position: -17px -136px;  } 
+.iconLang_fr{ background-position: -17px -153px;  } 
+.iconLang_ga{ background-position: -17px -170px;  } 
+.iconLang_gb{ background-position: -17px -187px;  } 
+.iconLang_gd{ background-position: -17px -204px;  } 
+.iconLang_ge{ background-position: -17px -221px;  } 
+.iconLang_gg{ background-position: -17px -238px;  } 
+.iconLang_gh{ background-position: -17px -255px;  } 
+.iconLang_gi{ background-position: -17px -272px;  } 
+.iconLang_gl{ background-position: -17px -289px;  } 
+.iconLang_gm{ background-position: -17px -306px;  } 
+.iconLang_gn{ background-position: -17px -323px;  } 
+.iconLang_gp{ background-position: -17px -340px;  } 
+.iconLang_gq{ background-position: -17px -357px;  } 
+.iconLang_gr{ background-position: -17px -374px;  } 
+.iconLang_gt{ background-position: -17px -391px;  } 
+.iconLang_gu{ background-position: -17px -408px;  } 
+.iconLang_gw{ background-position: -17px -425px;  } 
+.iconLang_gy{ background-position: -17px -442px;  } 
+.iconLang_hk{ background-position: -17px -459px;  } 
+.iconLang_hn{ background-position: -17px -476px;  } 
+.iconLang_hr{ background-position: -17px -493px;  } 
+.iconLang_ht{ background-position: -17px -510px;  } 
+.iconLang_hu{ background-position: -17px -527px;  } 
+.iconLang_id{ background-position: -17px -544px;  } 
+.iconLang_ie{ background-position: -17px -561px;  } 
+.iconLang_il{ background-position: -17px -578px;  } 
+.iconLang_im{ background-position: -17px -595px;  } 
+.iconLang_in{ background-position: -17px -612px;  } 
+.iconLang_iq{ background-position: -17px -629px;  } 
+.iconLang_ir{ background-position: -17px -646px;  } 
+.iconLang_is{ background-position: -17px -663px;  } 
+.iconLang_it{ background-position: -17px -680px;  } 
+.iconLang_je{ background-position: -17px -697px;  } 
+.iconLang_jm{ background-position: -17px -714px;  } 
+.iconLang_jo{ background-position: -17px -731px;  } 
+.iconLang_jp, .iconLang_ja{ background-position: -17px -748px;  } 
+.iconLang_ke{ background-position: -17px -765px;  } 
+.iconLang_kg{ background-position: -17px -782px;  } 
+.iconLang_kh{ background-position: -17px -799px;  } 
+.iconLang_ki{ background-position: -17px -816px;  } 
+.iconLang_km{ background-position: -17px -833px;  } 
+.iconLang_kn{ background-position: -17px -850px;  } 
+.iconLang_kp{ background-position: -17px -867px;  } 
+.iconLang_kr, .iconLang_ko{ background-position: -17px -884px;  } 
+.iconLang_kw{ background-position: -17px -901px;  } 
+.iconLang_ky{ background-position: -17px -918px;  } 
+.iconLang_kz{ background-position: -17px -935px;  } 
+.iconLang_la{ background-position: -17px -952px;  } 
+.iconLang_lb{ background-position: -17px -969px;  } 
+.iconLang_lc{ background-position: -17px -986px;  } 
+.iconLang_li{ background-position: -34px 0px;  } 
+.iconLang_lk{ background-position: -34px -17px;  } 
+.iconLang_lr{ background-position: -34px -34px;  } 
+.iconLang_ls{ background-position: -34px -51px;  } 
+.iconLang_lt{ background-position: -34px -68px;  } 
+.iconLang_lu{ background-position: -34px -85px;  } 
+.iconLang_lv{ background-position: -34px -102px;  } 
+.iconLang_ly{ background-position: -34px -119px;  } 
+.iconLang_ma{ background-position: -34px -136px;  } 
+.iconLang_mc{ background-position: -34px -153px;  } 
+.iconLang_md{ background-position: -34px -170px;  } 
+.iconLang_me{ background-position: -34px -187px;  } 
+.iconLang_mg{ background-position: -34px -204px;  } 
+.iconLang_mh{ background-position: -34px -221px;  } 
+.iconLang_mk{ background-position: -34px -238px;  } 
+.iconLang_ml{ background-position: -34px -255px;  } 
+.iconLang_mm{ background-position: -34px -272px;  } 
+.iconLang_mn{ background-position: -34px -289px;  } 
+.iconLang_mo{ background-position: -34px -306px;  } 
+.iconLang_mq{ background-position: -34px -323px;  } 
+.iconLang_mr{ background-position: -34px -340px;  } 
+.iconLang_ms{ background-position: -34px -357px;  } 
+.iconLang_mt{ background-position: -34px -374px;  } 
+.iconLang_mu{ background-position: -34px -391px;  } 
+.iconLang_mv{ background-position: -34px -408px;  } 
+.iconLang_mw{ background-position: -34px -425px;  } 
+.iconLang_mx{ background-position: -34px -442px;  } 
+.iconLang_my{ background-position: -34px -459px;  } 
+.iconLang_mz{ background-position: -34px -476px;  } 
+.iconLang_na{ background-position: -34px -493px;  } 
+.iconLang_nc{ background-position: -34px -510px;  } 
+.iconLang_ne{ background-position: -34px -527px;  } 
+.iconLang_ng{ background-position: -34px -544px;  } 
+.iconLang_ni{ background-position: -34px -561px;  } 
+.iconLang_nl{ background-position: -34px -578px;  } 
+.iconLang_no, .iconLang_nb{ background-position: -34px -595px;  } 
+.iconLang_np{ background-position: -34px -612px;  } 
+.iconLang_nr{ background-position: -34px -629px;  } 
+.iconLang_nz{ background-position: -34px -646px;  } 
+.iconLang_om{ background-position: -34px -663px;  } 
+.iconLang_pa{ background-position: -34px -680px;  } 
+.iconLang_pe{ background-position: -34px -697px;  } 
+.iconLang_pf{ background-position: -34px -714px;  } 
+.iconLang_pg{ background-position: -34px -731px;  } 
+.iconLang_ph{ background-position: -34px -748px;  } 
+.iconLang_pk{ background-position: -34px -765px;  } 
+.iconLang_pl{ background-position: -34px -782px;  } 
+.iconLang_pr{ background-position: -34px -799px;  } 
+.iconLang_ps{ background-position: -34px -816px;  } 
+.iconLang_pt{ background-position: -34px -833px;  } 
+.iconLang_pw{ background-position: -34px -850px;  } 
+.iconLang_py{ background-position: -34px -867px;  } 
+.iconLang_qa{ background-position: -34px -884px;  } 
+.iconLang_re{ background-position: -34px -901px;  } 
+.iconLang_ro{ background-position: -34px -918px;  } 
+.iconLang_rs{ background-position: -34px -935px;  } 
+.iconLang_ru{ background-position: -34px -952px;  } 
+.iconLang_rw{ background-position: -34px -969px;  } 
+.iconLang_sa{ background-position: -34px -986px;  } 
+.iconLang_sb{ background-position: -51px 0px;  } 
+.iconLang_sc{ background-position: -51px -17px;  } 
+.iconLang_sd{ background-position: -51px -34px;  } 
+.iconLang_se{ background-position: -51px -51px;  } 
+.iconLang_sg{ background-position: -51px -68px;  } 
+.iconLang_si{ background-position: -51px -85px;  } 
+.iconLang_sk{ background-position: -51px -102px;  } 
+.iconLang_sl{ background-position: -51px -119px;  } 
+.iconLang_sm{ background-position: -51px -136px;  } 
+.iconLang_sn{ background-position: -51px -153px;  } 
+.iconLang_so{ background-position: -51px -170px;  } 
+.iconLang_sr{ background-position: -51px -187px;  } 
+.iconLang_st{ background-position: -51px -204px;  } 
+.iconLang_sv{ background-position: -51px -221px;  } 
+.iconLang_sy{ background-position: -51px -238px;  } 
+.iconLang_sz{ background-position: -51px -255px;  } 
+.iconLang_tc{ background-position: -51px -272px;  } 
+.iconLang_td{ background-position: -51px -289px;  } 
+.iconLang_tg{ background-position: -51px -306px;  } 
+.iconLang_th{ background-position: -51px -323px;  } 
+.iconLang_tj{ background-position: -51px -340px;  } 
+.iconLang_tl{ background-position: -51px -357px;  } 
+.iconLang_tm{ background-position: -51px -374px;  } 
+.iconLang_tn{ background-position: -51px -391px;  } 
+.iconLang_to{ background-position: -51px -408px;  } 
+.iconLang_tr{ background-position: -51px -425px;  } 
+.iconLang_tt{ background-position: -51px -442px;  } 
+.iconLang_tv{ background-position: -51px -459px;  } 
+.iconLang_tw{ background-position: -51px -476px;  } 
+.iconLang_tz{ background-position: -51px -493px;  } 
+.iconLang_ua, .iconLang_uk{ background-position: -51px -510px;  } 
+.iconLang_ug{ background-position: -51px -527px;  } 
+.iconLang_us{ background-position: -51px -544px;  } 
+.iconLang_uy{ background-position: -51px -561px;  } 
+.iconLang_uz{ background-position: -51px -578px;  } 
+.iconLang_va{ background-position: -51px -595px;  } 
+.iconLang_vc{ background-position: -51px -612px;  } 
+.iconLang_ve{ background-position: -51px -629px;  } 
+.iconLang_vg{ background-position: -51px -646px;  } 
+.iconLang_vi{ background-position: -51px -663px;  } 
+.iconLang_vn{ background-position: -51px -680px;  } 
+.iconLang_vu{ background-position: -51px -697px;  } 
+.iconLang_ws{ background-position: -51px -714px;  } 
+.iconLang_ye{ background-position: -51px -731px;  } 
+.iconLang_za{ background-position: -51px -748px;  } 
+.iconLang_zm{ background-position: -51px -765px;  } 
+.iconLang_zw{ background-position: -51px -782px;  }
+.iconLang_xs{ background-position: -51px -799px;  }
+
+/* Facebook */
+
+.facebookStatus {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    display: block;
+    width: 39px;
+    height: 36px;
+}
+
+.facebookStatus.login {
+    background-repeat: no-repeat; 
+}
+
+.facebookStatus.logout {
+    background-repeat: no-repeat; 
+}
+
+
+.facebookBtn {
+    display: inline-block;
+    height: 35px;
+    padding: 0px 13px 0px 48px;
+    background-repeat: no-repeat; 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.facebookBtn.inactive {
+    background-position: 0px -70px;
+}
+
+.facebookBtn.cooldown span.label {
+    height: 20px;
+    line-height: 20px;
+}
+
+.facebookBtn span.label {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+.facebookBtn span.counter {
+    display:block;
+    height: 15px;
+    line-height: 15px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.facebookBtn span em.des {
+    font-size: 15px;
+    padding: 0px 3px 0px 0px;
+}
+
+.facebookBtn span em.viral {
+    font-size: 15px;
+    padding: 0px 0px 0px 6px;
+}
+
+.facebookBtn .icon_currency {
+    color: #fff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#lockMsgContainer .msgBox_overlay {
+    position: relative;
+    margin: 0px auto;
+    margin-top: 45px;
+    width: 300px;
+}
+
+#lockMsgContainer .msgBox_inner .btnClose, #coupon_overlay .btnClose {
+    width: 31px;
+    height: 31px;
+    min-width: 25px;
+    float: right;
+    display: block;
+    padding: 0px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#lockMsgContainer .msgBox_inner h2 {
+    line-height: 31px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+#lockMsgContainer .msgBox_inner p {
+    font-weight: normal;
+    margin: 5px 0px 10px 0px;
+}
+
+#lockMsgContainer .msgBox_inner img {
+    margin: 5px 0px;
+    max-width: 270px;
+}
+
+#lockMsgContainer .msgBox_inner .icon_btnClose, #coupon_overlay .icon_btnClose {
+    display: block;
+    height: 31px;
+    width: 31px;
+}
+
+#lockMsgContainer .button {
+    max-width: 245px;
+    overflow: hidden;
+}
+
+#lockLayer {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100000; 
+}

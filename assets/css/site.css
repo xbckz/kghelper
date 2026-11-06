@@ -1,0 +1,707 @@
+
+
+
+@media (max-width: 800px) {
+  body {
+    background-attachment: scroll !important;
+    background-size: cover;
+  }
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../images/game/source/mobilemiddleages/img/bg/background_pattern.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('../images/game/source/mobilemiddleages/img/bg/background_pattern.jpg') repeat top left / auto;
+  z-index: -1;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header_ext {
+  flex: 1;
+  height: 101px;
+  background-image: url('../images/game/source/mobilemiddleages/img/header/header_bg_center_2x.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.header {
+  width: 12%;
+  display: block;
+  object-fit: contain;
+}
+
+.header-text {
+  position: absolute;
+  top: 9px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: normal;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  pointer-events: none;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 50%;   /* almost full width on phones */
+    height: auto;     /* scale height automatically */
+  }
+
+  .header_ext {
+    height: 107px;     /* reduce side extensions on mobile */
+  }
+
+  .header-text {
+    font-size: 1em;   /* smaller text on mobile */
+  }
+}
+
+.sheet-container {
+  display: grid;
+  grid-template-columns: 1fr; /* stack vertically */
+  grid-gap: 20px;
+  justify-items: start; /* align left instead of center */
+  max-width: 100%;       /* take up 90% of screen width */
+  margin: 0 auto 10px auto; /* auto horizontal centering within max-width */
+}
+
+
+.bordered {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bordered img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  transform: translateX(4px);
+  
+}
+
+.bordered::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: none;
+  background-size: contain;   /* instead of cover */
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+
+
+.listView {
+    width: 100vw; /* full screen width */
+    margin: 0 auto -21px auto;
+    padding: 0;
+    overflow-x: hidden; /* optional, prevents horizontal scroll */
+    border-top: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.listView .listViewItem {
+    width: 100vw; /* full width */
+    padding: 10px 20px; /* inner spacing */
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
+    position: relative;
+    float: none; /* remove float */
+    clear: both;
+}
+
+.listView .listViewItem:nth-child(even) {
+    background: rgba(0,0,0,0.45);
+}
+
+
+.listView .listViewItem:nth-child(even) {
+    background: rgba(0,0,0,0.45);
+}
+.listView .listViewItem h4 {
+    font-size: 14px;
+    margin: 0 0 0px 0;
+    padding: 12px 0 7px 20px;
+    background-repeat: no-repeat;
+}
+dl.listViewItemDetails {
+    margin: 0 0 5px 0;
+}
+dl.listViewItemDetails dt {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 12px 9px 9px 17px;
+    float: left;
+    position: relative;
+}
+dl.listViewItemDetails dt .itemIcon {
+    width: 100%;
+    height: 100%;
+    background-color: #555;
+}
+dl.listViewItemDetails dd {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+dl.listViewItemDetails dd ul {
+    float: left;
+    position: relative;
+    top: 17px;
+}
+dl.listViewItemDetails dd li {
+    width: 119px;
+    padding: 5px 0 4px 27px;
+    position: relative;
+}
+
+.tabsWrap {
+    display: table;
+    margin: 0 auto;
+    clear: both;
+}
+body#home .tabsOuter {
+    margin: 0 auto;
+    padding: 5px 0;
+    background: rgba(0,0,0,0.45);
+    border-top: 1px solid #000;
+}
+.tabs {
+    margin: 30px;
+    padding: 0;
+    list-style: none;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: "American Typewriter", serif;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: hsl(50, 15%, 25%);
+    background: hsl(50, 15%, 25%) -webkit-gradient(linear, 0 0, 0 100%, from(hsl(50, 15%, 25%)), to(hsl(50, 15%, 15%)));
+}
+body#home .tabs { letter-spacing: -1px; }
+.tabs li {
+    display: block;
+    float: left;
+}
+.tabs a {
+    font-size: 12px;
+    display: block;
+    padding: 6px 5px;
+    border-left: 1px solid rgba(0,0,0,0.5);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+body#quest .tabs a { max-width: 70px; }
+.tabs li:first-child a {
+    border-left: none;
+    -webkit-border-top-left-radius: 4px; -webkit-border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px; border-bottom-left-radius: 4px;
+}
+.tabs li:last-child a {
+    border-right: none;
+    -webkit-border-top-right-radius: 4px; -webkit-border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px; border-bottom-right-radius: 4px;
+}
+.tabs .active a {
+    color: #fff;
+    background-color: hsl(50, 15%, 40%);
+    background: hsl(50, 15%, 40%) -webkit-gradient(linear, 0 0, 0 100%, from(hsl(50, 15%, 40%)), to(hsl(50, 15%, 30%)));
+}
+.tabPanel {
+    clear: both;
+}
+
+.tabs a {
+    text-decoration: none; /* remove underline */
+}
+
+.page-description {
+    width: 100%;
+    padding: 20px;
+    background: rgba(50, 50, 50, 0.8); /* subtle dark background */
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+}
+
+.page-description h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.page-description p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ddd;
+}
+
+
+
+
+@media (max-width: 800px) {
+  body {
+    background-attachment: scroll !important;
+    background-size: cover;
+  }
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../images/game/source/mobilemiddleages/img/bg/background_pattern.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -20px;
+}
+
+.header_ext {
+  flex: 1;
+  height: 101px;
+  background-image: url('../images/game/source/mobilemiddleages/img/header/header_bg_center_2x.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.header {
+  width: 12%;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 50%;
+    height: auto;
+  }
+  .header_ext {
+    height: 107px;
+  }
+  .header-text {
+    font-size: 1em;
+  }
+}
+
+.listView {
+    width: 100vw;
+    margin: 0 auto -21px auto;
+    padding: 0;
+    overflow-x: hidden;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.listView .listViewItem {
+    width: 100vw;
+    padding: 10px 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
+    position: relative;
+    float: none;
+    clear: both;
+}
+
+.listView .listViewItem:nth-child(even) {
+    background: rgba(0,0,0,0.45);
+}
+
+.listView .listViewItem h4 {
+    font-size: 14px;
+    margin: 0 0 0px 0;
+    padding: 12px 0 7px 20px;
+    background-repeat: no-repeat;
+}
+
+.page-description {
+    width: 100%;
+    padding: 20px;
+    background: rgba(50, 50, 50, 0.8);
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+}
+
+.page-description h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.page-description p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ddd;
+}
+
+.header-text {
+  position: absolute;
+  top: 9px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: normal;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.button {
+    border: 1px solid #000;
+    border-top: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font: 13px "American Typewriter", serif;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+    padding: 10px 12px;
+    min-width: 70px;
+    border-radius: 4px;
+    background-color: hsl(35, 75%, 50%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, hsl(35, 75%, 60%)), color-stop(48%, hsl(35, 75%, 50%)), color-stop(52%, hsl(35, 75%, 30%)), color-stop(100%, hsl(13, 80%, 25%)));
+    cursor: pointer;
+}
+
+.button:active,
+.button.active {
+    background-color: hsl(35, 75%, 60%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, hsl(35, 75%, 70%)), color-stop(48%, hsl(35, 75%, 60%)), color-stop(52%, hsl(35, 75%, 40%)), color-stop(100%, hsl(13, 80%, 35%)));
+}
+
+.tabsWrap {
+    display: table;
+    margin: 0 auto;
+    clear: both;
+}
+
+body#home .tabsOuter {
+    margin: 0 auto;
+    padding: 5px 0;
+    background: rgba(0,0,0,0.45);
+    border-top: 1px solid #000;
+}
+
+.tabs {
+    margin: 30px;
+    padding: 0;
+    list-style: none;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: "American Typewriter", serif;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: hsl(50, 15%, 25%);
+    background: hsl(50, 15%, 25%) -webkit-gradient(linear, 0 0, 0 100%, from(hsl(50, 15%, 25%)), to(hsl(50, 15%, 15%)));
+}
+
+.tabs li {
+    display: block;
+    float: left;
+}
+
+.tabs a {
+    font-size: 12px;
+    display: block;
+    padding: 6px 5px;
+    border-left: 1px solid rgba(0,0,0,0.5);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.tabs li:first-child a {
+    border-left: none;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.tabs li:last-child a {
+    border-right: none;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.tabs .active a {
+    color: #fff;
+    background-color: hsl(50, 15%, 40%);
+    background: hsl(50, 15%, 40%) -webkit-gradient(linear, 0 0, 0 100%, from(hsl(50, 15%, 40%)), to(hsl(50, 15%, 30%)));
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    color: white;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.input-group input,
+.input-group select {
+    width: 150px;
+    height: 32px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    outline: none;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+}
+
+.results-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+}
+
+.results-section h4 {
+    color: white;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+.unit-result {
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unit-result .unit-name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.unit-result .unit-stats {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.best-army-units {
+    position: relative;
+    width: 100%;
+    padding-top: 4px;
+}
+
+.best-army-unit-group {
+    position: relative;
+    margin: 0 0 16px;
+}
+
+.best-army-unit-group-title {
+    margin: 0 0 7px;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.best-army-unit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 120px));
+    gap: 8px;
+    justify-content: start;
+    align-items: start;
+}
+
+.best-army-unit-card {
+    appearance: none;
+    -webkit-appearance: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    width: 120px;
+    min-height: 143px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    text-align: center;
+    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 0;
+}
+
+.best-army-unit-card:hover,
+.best-army-unit-card:focus-visible,
+.best-army-unit-card[aria-expanded="true"] {
+    border-color: rgba(230,166,76,0.95);
+    outline: none;
+}
+
+.best-army-unit-image {
+    display: block;
+    width: 100%;
+    height: 118px;
+    object-fit: cover;
+}
+
+.best-army-unit-quantity {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+
+.best-army-unit-quantity {
+    min-height: 24px;
+    padding: 4px 2px 2px;
+    color: #fff;
+    background: rgba(55,55,55,0.96);
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.best-army-unit-detail {
+    position: absolute;
+    z-index: 5;
+    width: 176px;
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: 6px;
+    background: rgba(85,80,76,0.95);
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+}
+
+.best-army-unit-detail h5 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.best-army-unit-detail ul {
+    margin: 0;
+    padding-left: 19px;
+}
+
+.best-army-unit-detail li {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .best-army-unit-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 7px;
+    }
+
+    .best-army-unit-card {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .best-army-unit-image {
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .best-army-unit-detail {
+        width: min(176px, calc(100% - 16px));
+    }
+}
+
+/* Knight Game content sits inside wgweb's native page-description/listView blocks. */
+.page-description h1 { margin:0 0 10px; font:bold 20px/1.2 'Trebuchet MS','Segoe UI',sans-serif; letter-spacing:.5px; }
+.listView .listViewItem h2 { margin:0 0 10px; color:#fff; font:bold 20px/1.2 'Times New Roman',serif; }
+.listView .listViewItem p { color:#ddd; }
+.field { display:flex; align-items:center; gap:10px; flex-wrap:wrap; width:min(100%,540px); margin:0 0 15px; color:#fff; }
+.field > span { color:#fff; font-size:14px; min-width:120px; }
+.field input,.field select,.field textarea { width:150px; height:32px; text-align:center; font-size:14px; border-radius:6px; border:2px solid #ccc; outline:none; background:#fff; color:#000; padding:5px; }
+.field textarea { height:auto; min-height:65px; text-align:left; }
+.button-quiet { background:linear-gradient(#68645a,#35332c); color:#fff; }
+.button-small { min-width:0; padding:6px 9px; font-size:12px; }
+.form-actions { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:12px 0; }
+.result-panel { margin:12px 0; padding:12px; color:#fff; background:rgba(255,255,255,.05); border-radius:6px; }
+.table-wrap { width:100%; max-width:100%; overflow-x:auto; }
+.data-table { width:100%; border-collapse:collapse; color:#fff; font-size:12px; }
+.data-table th,.data-table td { padding:6px; border:1px solid rgba(255,255,255,.18); text-align:left; }
+.data-table th { background:rgba(70,70,70,.88); }
+.empty-row td { color:#ccc; }
+.map-figure { width:min(100%,680px); margin:10px auto 18px; }
+.map-figure img { width:100%; max-height:320px; object-fit:cover; border:1px solid #777; }
+.map-figure figcaption { padding:6px 8px; color:#bbb; background:rgba(0,0,0,.55); font-size:12px; }
+@media(max-width:600px) { .listView .listViewItem { padding:10px; } .field > span { flex:0 0 120px; } .data-table { min-width:500px; } }

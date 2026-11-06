@@ -1,0 +1,631 @@
+/* Knight Game presentation layer, using the game's locally stored 2x art.
+   Page proportions and markup remain those of the wgweb reference project. */
+:root {
+  --kg-blue: #2376bc;
+  --kg-blue-light: #5bb3fe;
+  --kg-leather: #2a1d16;
+  --kg-ink: #fff;
+  --kg-muted: #d4d0cb;
+  --kg-edge: #5b493c;
+  --kg-header: url('../images/game/source/mobilemiddleages/img/header/header_bg_center_2x.png');
+  --kg-title: url('../images/game/source/mobilemiddleages/img/header/header_bg_headline_2x.png');
+  --kg-panel: url('../images/game/source/mobilemiddleages/img/panel/panel_structure_2x.jpg');
+  --kg-panel-title: url('../images/game/source/mobilemiddleages/img/panel/panel_structure_top_2x.png');
+  --kg-panel-top: url('../images/game/source/mobilemiddleages/img/panel/panel_top01_2x.png');
+  --kg-panel-bottom: url('../images/game/source/mobilemiddleages/img/panel/panel_bottom_2x.png');
+  --kg-divider: url('../images/game/source/mobilemiddleages/img/panel/panel_divider_2x.jpg');
+  --kg-nav-sprite: url('../images/game/source/mobilemiddleages/img/footer/tabBar_sprite_2x.png');
+  --kg-more-nav-sprite: url('../images/game/source/mobilemiddleages/img/more/morenav_sprite_2x.png');
+  --kg-news-sprite: url('../images/game/source/mobilemiddleages/img/newsFeed/sprite_newsFeed_icons_2x.png');
+  --kg-chevron: url('../images/game/source/mobilemiddleages/img/icons/icon_chevron_2x.png');
+}
+
+html,
+body {
+  font: 16px 'Times New Roman', Times, serif;
+  color: var(--kg-ink);
+  background-image: url('../images/game/source/mobilemiddleages/img/bg/background_pattern.jpg');
+}
+
+body::after {
+  background-image: url('../images/game/source/mobilemiddleages/img/bg/background_pattern.jpg');
+}
+
+::selection {
+  color: #fff;
+  background: #286da3;
+}
+
+* {
+  scrollbar-color: #725e49 #18120f;
+  scrollbar-width: auto;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track { background: #18120f; }
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #18120f;
+  border-radius: 5px;
+  background: #725e49;
+}
+
+::-webkit-scrollbar-thumb:hover { background: #a18159; }
+
+a { color: #f1c27a; }
+a:hover { color: #fff; }
+
+/* The Knight stylesheet repeats this header texture across the full #header. */
+.site-header {
+  position: relative;
+  z-index: 4;
+}
+
+.skip-link {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: -10000px;
+}
+
+.skip-link:focus {
+  top: 8px;
+  left: 8px;
+  padding: 8px 12px;
+  color: #fff;
+  background: #111;
+  outline: 2px solid #73b9ed;
+  outline-offset: 2px;
+}
+
+.header-row .header_ext {
+  background-image: var(--kg-header) !important;
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-size: auto 113px !important;
+}
+
+.header-row .header {
+  flex: 0 1 320px;
+  width: min(320px, 100vw) !important;
+  max-width: 100vw;
+  height: 121px !important;
+  background: var(--kg-title) no-repeat center top;
+  background-size: 320px 121px;
+}
+
+.header-text {
+  top: 0 !important;
+  left: 50%;
+  width: min(184px, 60vw);
+  height: 38px;
+  transform: translateX(-50%);
+  background: none;
+  color: #fff;
+  font: bold 15px/31px 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.7), 0 1px 2px #000;
+  letter-spacing: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Knight Game's #newsFeed announcement row, matched to its style.css and retina.css. */
+#newsFeed {
+  clear: both;
+  width: 99%;
+  max-width: 700px;
+  margin: 10px auto 20px;
+  color: #fff;
+}
+
+#newsFeed .link { color: #e6a64c; font-weight: bold; }
+
+#newsFeed h3 {
+  margin: 0;
+  padding: 6px 10px 7px;
+  color: #fff;
+  background: rgba(0,0,0,.35);
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  font-size: 13px;
+}
+
+#newsFeed .news {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(0,0,0,.3);
+}
+
+#newsFeed .news li {
+  position: relative;
+  background-color: rgba(0,0,0,.2);
+}
+
+#newsFeed .news li > a,
+#newsFeed .news li div {
+  display: block;
+  padding: 15px 35px;
+  border-top: 1px solid rgba(255,255,255,.15);
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  overflow-wrap: anywhere;
+}
+
+#newsFeed .news li:last-child a,
+#newsFeed .news li:last-child div { border-bottom: 1px solid rgba(255,255,255,.15); }
+#newsFeed p { margin: 0; }
+
+#newsFeed .newsType {
+  margin: 2px 0 3px;
+  color: #ccc;
+  font-size: 9px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#newsFeed h5 { margin: 0 0 5px; font-size: 12px; }
+.news li { background-repeat: no-repeat; background-position: 5px 15px; }
+
+.news li::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  display: block;
+  width: 26px;
+  height: 47px;
+  background-image: var(--kg-news-sprite);
+  background-repeat: no-repeat;
+  background-size: 31px auto;
+}
+
+#newsFeed .news .system::before { background-position: 0 -200px; }
+#newsFeed .news .system a { background: none; }
+#newsFeed .news .system h4 { color: #e48c00; font-weight: bold; }
+
+/* Keep the wgweb accordion geometry; use the Knight game's leather panel,
+   separators, blue tab icons, and chevron artwork inside it. */
+.menuList {
+  overflow: hidden;
+  border: 1px solid #606976;
+  border-radius: 10px;
+  background: var(--kg-panel) repeat;
+  background-size: 160px auto;
+  box-shadow: none;
+}
+
+.menuItem {
+  border-bottom: 1px solid #606976;
+  box-shadow: none;
+}
+
+.menuItem:last-child { box-shadow: none; }
+
+.menuItem > .toggle {
+  color: #fff;
+  font-family: inherit;
+  font-size: 17px;
+  text-shadow: none;
+}
+
+.menuItem:nth-child(even) > .toggle {
+  background: #111;
+}
+
+.menuContent {
+  padding: 10px 15px;
+  color: #fff;
+  background: var(--kg-panel) repeat;
+  background-size: 160px auto;
+  border-top: 1px solid rgba(255,255,255,.2);
+  font: 16px/1.25 "Times New Roman", Times, serif;
+}
+
+.menuIcon {
+  display: block;
+  flex: 0 0 50px;
+  width: 50px !important;
+  height: 50px !important;
+  background-image: var(--kg-nav-sprite);
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+  image-rendering: auto;
+}
+
+.menuIcon--realm { background-position: 0 -50px; }
+.menuIcon--armory { background-position: -120px -50px; }
+.menuIcon--guide { background-position: -180px -50px; }
+.menuIcon--equipment {
+  flex-basis: 84px;
+  width: 84px !important;
+  margin-left: -17px;
+  margin-right: -17px;
+  background-size: 420px 100px;
+  background-position: -252px 0;
+}
+.menuIcon--vassals {
+  background-image: var(--kg-more-nav-sprite);
+  background-size: 50px auto;
+  background-position: 0 -100px;
+}
+.menuIcon--tools {
+  background-image: var(--kg-more-nav-sprite);
+  background-size: 50px auto;
+  background-position: 0 -600px;
+}
+.menuIcon--troops { background-position: -60px -50px; }
+.menuIcon--buildings { background-position: -180px -50px; }
+.menuIcon--tips {
+  background-image: var(--kg-more-nav-sprite);
+  background-size: 50px auto;
+  background-position: 0 -700px;
+}
+.menuIcon--official {
+  padding: 4px;
+  background-image: none;
+  object-fit: contain;
+}
+
+.menuArrow {
+  flex: 0 0 36px;
+  width: 36px !important;
+  height: 36px !important;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 1px #000);
+  transition: transform .16s ease;
+}
+
+.toggle[aria-expanded="true"] .menuArrow { transform: rotate(90deg); }
+
+.nestedItem {
+  color: #fff;
+  background: transparent;
+  border-top: 1px solid rgba(255,255,255,.2);
+  border-right: 1px solid rgba(255,255,255,.15);
+  border-bottom: 1px solid rgba(0,0,0,.55);
+  border-left: 1px solid rgba(255,255,255,.15);
+}
+
+.nestedItem:hover,
+.discordLink:hover { filter: brightness(1.14); }
+
+.nestedItem .menuTitle { padding: 12px 15px; }
+.nestedItem strong {
+  color: #fff;
+  font: bold 16px/1.2 "Times New Roman", Times, serif;
+  text-shadow: 0 1px 2px rgba(0,0,0,.9);
+}
+
+/* Page titles and list rows use the game's title plate and leather panel. */
+.page-description {
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  background: var(--kg-panel-title) repeat-x center top;
+  background-size: 40px auto;
+  border-bottom: 0;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,.18);
+}
+
+.page-description::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: var(--kg-divider) repeat-x left top;
+  background-size: 40px auto;
+}
+
+.page-description h1,
+.page-description h2 {
+  color: #fff;
+  font: bold 20px 'Trebuchet MS', 'Segoe UI', sans-serif;
+  letter-spacing: .5px;
+  text-shadow: 0 1px 2px #000;
+}
+
+.page-description p { color: #e2d8ca; }
+
+.listView .listViewItem {
+  color: #fff;
+  background: var(--kg-panel) repeat !important;
+  background-size: 160px auto !important;
+  border-top-color: rgba(255,255,255,.12);
+  border-bottom-color: rgba(0,0,0,.72);
+}
+
+.listView .listViewItem:nth-child(even) { background-color: #291d16; }
+.listView .listViewItem h2,
+.listView .listViewItem h3,
+.listView .listViewItem h4 { color: #fff; text-shadow: 0 1px 1px #000; }
+
+.map-figure {
+  margin: 0;
+  padding: 12px;
+  color: #e4ddd5;
+  background: var(--kg-panel) repeat;
+  background-size: 160px auto;
+  border-bottom: 1px solid rgba(0,0,0,.7);
+  text-align: center;
+}
+
+.map-figure img {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  margin: 0 auto 8px;
+  border: 1px solid #74604d;
+  box-shadow: 0 2px 8px #111;
+}
+
+.map-figure figcaption { font-size: 12px; }
+
+/* Inputs and action bars follow the game's simpleForm and panel button rules. */
+.field input,
+.field select,
+.field textarea {
+  border: 0;
+  border-radius: 3px;
+  padding: 7px 2.5%;
+  color: #171513;
+  background: hsl(0, 0%, 90%);
+  font: 13px/1.3 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 2px solid #73b9ed;
+  outline-offset: 1px;
+}
+
+.form-actions {
+  background: url('../images/game/source/mobilemiddleages/img/panel/panel_structure2_2x.jpg') repeat;
+  background-size: 160px auto;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.button {
+  border: 1px solid #000;
+  border-top: 0;
+  border-radius: 4px;
+  color: #fff;
+  background: #2376bc;
+  font: bold 13px 'Times', serif;
+  text-shadow: 0 1px 1px #000;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 0 2px 1px rgba(0,0,0,.5), 0 1px 2px #000;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 0 2px 1px rgba(0,0,0,.5), 0 1px 2px #000;
+}
+
+.button:hover,
+.button:focus-visible { color: #fff; background: #348bd2; }
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: .58;
+  filter: saturate(.55);
+}
+
+.button:active,
+.button.active {
+  background: #5bb3fe;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 0 2px 1px rgba(0,0,0,.5), 0 1px 10px #000;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 0 2px 1px rgba(0,0,0,.5), 0 1px 10px #000;
+}
+
+.button.button-quiet {
+  background: #39302a;
+}
+
+.button.button-quiet:hover,
+.button.button-quiet:focus-visible { background: #56483d; }
+
+.tabs {
+  border: 1px solid rgba(0,0,0,.5);
+  border-radius: 4px;
+  background-color: #5c4c4c;
+  background: linear-gradient(#5c4c4c, #0f0c0b);
+  font-family: "American Typewriter", serif;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+.tabs a {
+  color: rgba(255,255,255,.5);
+  border-left-color: rgba(0,0,0,.5);
+  border-right-color: rgba(255,255,255,.1);
+}
+
+.tabs .active a {
+  color: #fff;
+  background-color: #b09090;
+  background: linear-gradient(#b09090, #2f2623);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+}
+
+.site-footer {
+  color: #aba29a;
+  border-top: 1px solid rgba(255,255,255,.09);
+  background: rgba(0,0,0,.35);
+}
+
+.site-footer a { color: #d2ae79; }
+
+.text-link-arrow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  vertical-align: -3px;
+  object-fit: contain;
+}
+
+.text-link,
+.listViewItem a.button { color: #fff; }
+
+@media (max-width: 600px) {
+  .header-row .header {
+    flex-basis: min(320px, 100vw);
+    height: 121px !important;
+    background-size: min(320px, 100vw) auto;
+  }
+  .header-text { width: min(184px, 60vw); }
+  .menuItem > .toggle { padding: 12px 15px; }
+  .menuLeft { gap: 10px; }
+  .page-description { padding: 20px; }
+  .listView .listViewItem { padding: 10px 20px; }
+}
+
+/* Keep WgHelp's page geometry while using Knight Game artwork. */
+.header-row {
+  position: relative;
+  z-index: 5;
+  align-items: stretch;
+  height: 102px !important;
+  min-height: 102px !important;
+  margin-bottom: 0 !important;
+  overflow: visible !important;
+}
+
+.site-header .header-text {
+  z-index: 6;
+  top: 0 !important;
+  left: 50%;
+  width: 140px !important;
+  height: 38px;
+  transform: translateX(-50%);
+  font: 16px/34px 'Times New Roman', Times, serif !important;
+  font-weight: normal !important;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+.site-header + .tabsOuter { padding-bottom: 0; }
+
+.tabs a {
+  padding: 6px 5px;
+  font-size: 12px;
+}
+
+.menuItem > .toggle { font-size: 20px; }
+
+/* WgHelp's system announcement geometry and typography. */
+.commentslist.system-comment {
+  clear: both;
+  width: 95%;
+  margin: 10px auto 20px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  background: hsl(210, 5%, 16%);
+  border: 1px solid #606976;
+  border-radius: 10px;
+}
+
+.commentslist.system-comment li {
+  position: relative;
+  border-bottom: 0;
+}
+
+.commentslist.system-comment .system-comment-content {
+  display: block;
+  padding: 15px 10px;
+  color: #fff;
+  text-align: center;
+  font: 13px/1.3 "Helvetica Neue", Arial, sans-serif;
+}
+
+.commentslist.system-comment .system-comment-type {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 10px;
+  text-align: left;
+}
+
+.commentslist.system-comment li h6 {
+  margin: 0;
+  color: #e48c00;
+  font: bold 9px/1.3 "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.commentslist.system-comment .alert-icon {
+  flex: 0 0 26px;
+  display: block;
+  width: 26px;
+  height: 47px;
+  margin: 0;
+  background-image: var(--kg-news-sprite);
+  background-repeat: no-repeat;
+  background-position: 0 -200px;
+  background-size: 31px 250px;
+}
+
+.commentslist.system-comment li .commentMsg {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Times", serif;
+  color: #fff;
+}
+
+.commentslist.system-comment li .commentDesc,
+.commentslist.system-comment li .commentDescc {
+  color: #fff;
+  font: 13px/1.3 "Helvetica Neue", Arial, sans-serif;
+}
+
+.commentslist.system-comment li .commentDesc { margin: 7px 0 0; }
+.commentslist.system-comment li .commentDescc { margin: 20px 0 0; }
+
+.menuList {
+  border-color: #606976;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.menuItem { border-bottom-color: #606976; }
+.menuItem > .toggle { font-family: inherit; font-size: 20px; text-shadow: none; }
+.menuItem:nth-child(even) > .toggle { background: #111; }
+.menuContent { padding: 10px 15px; font: 16px/1.25 "Times New Roman", Times, serif; }
+.menuArrow { flex-basis: 36px; width: 36px !important; height: 36px !important; }
+.nestedItem .menuTitle { padding: 12px 15px; }
+.nestedItem strong {
+  color: #fff;
+  font: bold 16px/1.2 "Times New Roman", Times, serif;
+  text-shadow: 0 1px 2px rgba(0,0,0,.9);
+}
+
+.site-footer {
+  padding: 15px;
+  border: 0;
+  background: transparent;
+  color: #8b8b8b;
+  font: 14px 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.site-footer a { color: inherit; text-decoration: underline; }
+.footer-about-link { margin-top: 10px !important; }
+
+@media (max-width: 600px) {
+  .site-header .header-text { font-size: 16px !important; }
+  .tabs a {
+    padding: 6px 3px;
+    font-size: clamp(9px, 2.7vw, 12px);
+    line-height: 1.2;
+  }
+  .commentslist.system-comment .system-comment-content { padding: 15px 10px; }
+}

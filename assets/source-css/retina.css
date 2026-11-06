@@ -1,0 +1,418 @@
+/* Retina Display BG-Images */
+
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2) {*/
+
+    /* /factions (Faction Icons) */
+    .faction_icon1 { background-image: url(/static/mobilemiddleages/img/factions/faction1_2x.png); }
+    .faction_icon2 { background-image: url(/static/mobilemiddleages/img/factions/faction2_2x.png); }
+    .faction_icon3 { background-image: url(/static/mobilemiddleages/img/factions/faction3_2x.png); }
+
+    /* /enhancement (Enhancement) */
+    .enhancement_item1 { background-image: url(/static/mobilemiddleages/img/enhancement/1_2x.jpg); }
+    .enhancement_item2 { background-image: url(/static/mobilemiddleages/img/enhancement/2_2x.jpg); }
+    .enhancement_item3 { background-image: url(/static/mobilemiddleages/img/enhancement/3_2x.jpg); }
+    .enhancement_item4 { background-image: url(/static/mobilemiddleages/img/enhancement/4_2x.jpg); }
+    .enhancement_item5 { background-image: url(/static/mobilemiddleages/img/enhancement/5_2x.jpg); }
+    .enhancement_item6 { background-image: url(/static/mobilemiddleages/img/enhancement/6_2x.jpg); }
+    .enhancement_item7 { background-image: url(/static/mobilemiddleages/img/enhancement/7_2x.jpg); }
+    .enhancement_item8 { background-image: url(/static/mobilemiddleages/img/enhancement/8_2x.jpg); }
+    .enhancement_item9 { background-image: url(/static/mobilemiddleages/img/enhancement/9_2x.jpg); }
+    .enhancement_item10 { background-image: url(/static/mobilemiddleages/img/enhancement/10_2x.jpg); }
+    .enhancement_item11 { background-image: url(/static/mobilemiddleages/img/enhancement/11_2x.jpg); }
+    .enhancement_item12 { background-image: url(/static/mobilemiddleages/img/enhancement/12_2x.jpg); }
+    .enhancement_item13 { background-image: url(/static/mobilemiddleages/img/enhancement/13_2x.jpg); }
+    .enhancement_item14 { background-image: url(/static/mobilemiddleages/img/enhancement/14_2x.jpg); }
+    .enhancement_item15 { background-image: url(/static/mobilemiddleages/img/enhancement/15_2x.jpg); }
+    .enhancement_item16 { background-image: url(/static/mobilemiddleages/img/enhancement/16_2x.jpg); }
+    .enhancement_item17 { background-image: url(/static/mobilemiddleages/img/enhancement/17_2x.jpg); }
+    .enhancement_item18 { background-image: url(/static/mobilemiddleages/img/enhancement/18_2x.jpg); }
+    .enhancement_item19 { background-image: url(/static/mobilemiddleages/img/enhancement/19_2x.jpg); }
+    .enhancement_item20 { background-image: url(/static/mobilemiddleages/img/enhancement/20_2x.jpg); }
+    .enhancement_item21 { background-image: url(/static/mobilemiddleages/img/enhancement/21_2x.jpg); }
+    .enhancement_item22 { background-image: url(/static/mobilemiddleages/img/enhancement/22_2x.jpg); }
+    .enhancement_item23 { background-image: url(/static/mobilemiddleages/img/enhancement/23_2x.jpg); }
+    .enhancement_item24 { background-image: url(/static/mobilemiddleages/img/enhancement/24_2x.jpg); }
+    .enhancement_item25 { background-image: url(/static/mobilemiddleages/img/enhancement/25_2x.jpg); }
+    .enhancement_item26 { background-image: url(/static/mobilemiddleages/img/enhancement/26_2x.jpg); }
+    .enhancement_item27 { background-image: url(/static/mobilemiddleages/img/enhancement/27_2x.jpg); }
+    .enhancement_item28 { background-image: url(/static/mobilemiddleages/img/enhancement/28_2x.jpg); }
+    .enhancement_item29 { background-image: url(/static/mobilemiddleages/img/enhancement/29_2x.jpg); }
+    .enhancement_item30 { background-image: url(/static/mobilemiddleages/img/enhancement/30_2x.jpg); }
+    .enhancement_item501 { background-image: url(/static/mobilemiddleages/img/enhancement/501_2x.jpg); }
+    .enhancement_item502 { background-image: url(/static/mobilemiddleages/img/enhancement/502_2x.jpg); }
+    .enhancement_item503 { background-image: url(/static/mobilemiddleages/img/enhancement/503_2x.jpg); }
+    .enhancement_item504 { background-image: url(/static/mobilemiddleages/img/enhancement/504_2x.jpg); }
+    .enhancement_item505 { background-image: url(/static/mobilemiddleages/img/enhancement/505_2x.jpg); }
+    .enhancement_item1001 { background-image: url(/static/mobilemiddleages/img/enhancement/1001_2x.jpg); }
+    .enhancement_item1002 { background-image: url(/static/mobilemiddleages/img/enhancement/1002_2x.jpg); }
+    .enhancement_item1003 { background-image: url(/static/mobilemiddleages/img/enhancement/1003_2x.jpg); }
+    .enhancement_item1004 { background-image: url(/static/mobilemiddleages/img/enhancement/1004_2x.jpg); }
+    .enhancement_item1005 { background-image: url(/static/mobilemiddleages/img/enhancement/1005_2x.jpg); }
+    .enhancement_item1006 { background-image: url(/static/mobilemiddleages/img/enhancement/1006_2x.jpg); }
+    .enhancement_item1007 { background-image: url(/static/mobilemiddleages/img/enhancement/1007_2x.jpg); }
+    .enhancement_item1008 { background-image: url(/static/mobilemiddleages/img/enhancement/1008_2x.jpg); }
+    .enhancement_item1009 { background-image: url(/static/mobilemiddleages/img/enhancement/1009_2x.jpg); }
+    .enhancement_item1010 { background-image: url(/static/mobilemiddleages/img/enhancement/1010_2x.jpg); }
+    .enhancement_item1011 { background-image: url(/static/mobilemiddleages/img/enhancement/1011_2x.jpg); }
+    .enhancement_item1012 { background-image: url(/static/mobilemiddleages/img/enhancement/1012_2x.jpg); }
+    .enhancement_item1013 { background-image: url(/static/mobilemiddleages/img/enhancement/1013_2x.jpg); }
+    .enhancement_item1014 { background-image: url(/static/mobilemiddleages/img/enhancement/1014_2x.jpg); }
+    .enhancement_item1015 { background-image: url(/static/mobilemiddleages/img/enhancement/1015_2x.jpg); }
+    .enhancement_item1016 { background-image: url(/static/mobilemiddleages/img/enhancement/1016_2x.jpg); }
+    .enhancement_item1017 { background-image: url(/static/mobilemiddleages/img/enhancement/1017_2x.jpg); }
+    .enhancement_item1018 { background-image: url(/static/mobilemiddleages/img/enhancement/1018_2x.jpg); }
+    .enhancement_item1019 { background-image: url(/static/mobilemiddleages/img/enhancement/1019_2x.jpg); }
+    .enhancement_item1020 { background-image: url(/static/mobilemiddleages/img/enhancement/1020_2x.jpg); }
+    .enhancement_item1021 { background-image: url(/static/mobilemiddleages/img/enhancement/1021_2x.jpg); }
+    .enhancement_item1022 { background-image: url(/static/mobilemiddleages/img/enhancement/1022_2x.jpg); }
+    .enhancement_item1023 { background-image: url(/static/mobilemiddleages/img/enhancement/1023_2x.jpg); }
+    .enhancement_item1024 { background-image: url(/static/mobilemiddleages/img/enhancement/1024_2x.jpg); }
+    .enhancement_item1025 { background-image: url(/static/mobilemiddleages/img/enhancement/1025_2x.jpg); }
+    .enhancement_item1026 { background-image: url(/static/mobilemiddleages/img/enhancement/1026_2x.jpg); }
+    .enhancement_item1027 { background-image: url(/static/mobilemiddleages/img/enhancement/1027_2x.jpg); }
+    .enhancement_item1028 { background-image: url(/static/mobilemiddleages/img/enhancement/1028_2x.jpg); }
+    .enhancement_item1029 { background-image: url(/static/mobilemiddleages/img/enhancement/1029_2x.jpg); }
+    .enhancement_item1030 { background-image: url(/static/mobilemiddleages/img/enhancement/1030_2x.jpg); }
+    .enhancement_item1501 { background-image: url(/static/mobilemiddleages/img/enhancement/1501_2x.jpg); }
+    .enhancement_item1502 { background-image: url(/static/mobilemiddleages/img/enhancement/1502_2x.jpg); }
+    .enhancement_item1503 { background-image: url(/static/mobilemiddleages/img/enhancement/1503_2x.jpg); }
+    .enhancement_item1504 { background-image: url(/static/mobilemiddleages/img/enhancement/1504_2x.jpg); }
+    .enhancement_item1505 { background-image: url(/static/mobilemiddleages/img/enhancement/1505_2x.jpg); }
+    .enhancement_item2001 { background-image: url(/static/mobilemiddleages/img/enhancement/2001_2x.jpg); }
+    .enhancement_item2002 { background-image: url(/static/mobilemiddleages/img/enhancement/2002_2x.jpg); }
+    .enhancement_item2003 { background-image: url(/static/mobilemiddleages/img/enhancement/2003_2x.jpg); }
+    .enhancement_item2004 { background-image: url(/static/mobilemiddleages/img/enhancement/2004_2x.jpg); }
+    .enhancement_item2005 { background-image: url(/static/mobilemiddleages/img/enhancement/2005_2x.jpg); }
+    .enhancement_item2006 { background-image: url(/static/mobilemiddleages/img/enhancement/2006_2x.jpg); }
+    .enhancement_item2007 { background-image: url(/static/mobilemiddleages/img/enhancement/2007_2x.jpg); }
+    .enhancement_item2008 { background-image: url(/static/mobilemiddleages/img/enhancement/2008_2x.jpg); }
+    .enhancement_item2009 { background-image: url(/static/mobilemiddleages/img/enhancement/2009_2x.jpg); }
+    .enhancement_item2010 { background-image: url(/static/mobilemiddleages/img/enhancement/2010_2x.jpg); }
+    .enhancement_item2011 { background-image: url(/static/mobilemiddleages/img/enhancement/2011_2x.jpg); }
+    .enhancement_item2012 { background-image: url(/static/mobilemiddleages/img/enhancement/2012_2x.jpg); }
+    .enhancement_item2013 { background-image: url(/static/mobilemiddleages/img/enhancement/2013_2x.jpg); }
+    .enhancement_item2014 { background-image: url(/static/mobilemiddleages/img/enhancement/2014_2x.jpg); }
+    .enhancement_item2015 { background-image: url(/static/mobilemiddleages/img/enhancement/2015_2x.jpg); }
+    .enhancement_item2016 { background-image: url(/static/mobilemiddleages/img/enhancement/2016_2x.jpg); }
+    .enhancement_item2017 { background-image: url(/static/mobilemiddleages/img/enhancement/2017_2x.jpg); }
+    .enhancement_item2018 { background-image: url(/static/mobilemiddleages/img/enhancement/2018_2x.jpg); }
+    .enhancement_item2019 { background-image: url(/static/mobilemiddleages/img/enhancement/2019_2x.jpg); }
+    .enhancement_item2020 { background-image: url(/static/mobilemiddleages/img/enhancement/2020_2x.jpg); }
+    .enhancement_item2021 { background-image: url(/static/mobilemiddleages/img/enhancement/2021_2x.jpg); }
+    .enhancement_item2022 { background-image: url(/static/mobilemiddleages/img/enhancement/2022_2x.jpg); }
+    .enhancement_item2023 { background-image: url(/static/mobilemiddleages/img/enhancement/2023_2x.jpg); }
+    .enhancement_item2024 { background-image: url(/static/mobilemiddleages/img/enhancement/2024_2x.jpg); }
+    .enhancement_item2025 { background-image: url(/static/mobilemiddleages/img/enhancement/2025_2x.jpg); }
+    .enhancement_item2026 { background-image: url(/static/mobilemiddleages/img/enhancement/2026_2x.jpg); }
+    .enhancement_item2027 { background-image: url(/static/mobilemiddleages/img/enhancement/2027_2x.jpg); }
+    .enhancement_item2028 { background-image: url(/static/mobilemiddleages/img/enhancement/2028_2x.jpg); }
+    .enhancement_item2029 { background-image: url(/static/mobilemiddleages/img/enhancement/2029_2x.jpg); }
+    .enhancement_item2030 { background-image: url(/static/mobilemiddleages/img/enhancement/2030_2x.jpg); }
+    .enhancement_item2501 { background-image: url(/static/mobilemiddleages/img/enhancement/2501_2x.jpg); }
+    .enhancement_item2502 { background-image: url(/static/mobilemiddleages/img/enhancement/2502_2x.jpg); }
+    .enhancement_item2503 { background-image: url(/static/mobilemiddleages/img/enhancement/2503_2x.jpg); }
+    .enhancement_item2504 { background-image: url(/static/mobilemiddleages/img/enhancement/2504_2x.jpg); }
+    .enhancement_item2505 { background-image: url(/static/mobilemiddleages/img/enhancement/2505_2x.jpg); }
+
+    .enhancement_item3001 { background-image: url(/static/mobilemiddleages/img/enhancement/3001_2x.jpg); }
+    .enhancement_item3002 { background-image: url(/static/mobilemiddleages/img/enhancement/3002_2x.jpg); }
+    .enhancement_item3003 { background-image: url(/static/mobilemiddleages/img/enhancement/3003_2x.jpg); }
+    .enhancement_item3005 { background-image: url(/static/mobilemiddleages/img/enhancement/3005_2x.jpg); }
+    
+    /* /economy (Slaves/Servants) */
+    .enhancement_item10001 { background-image: url(/static/mobilemiddleages/img/enhancement/10001_2x.jpg); }
+    .enhancement_item10002 { background-image: url(/static/mobilemiddleages/img/enhancement/10002_2x.jpg); }
+    .enhancement_item10003 { background-image: url(/static/mobilemiddleages/img/enhancement/10003_2x.jpg); }
+    .enhancement_item10004 { background-image: url(/static/mobilemiddleages/img/enhancement/10004_2x.jpg); }
+    .enhancement_item10005 { background-image: url(/static/mobilemiddleages/img/enhancement/10005_2x.jpg); }
+    .enhancement_item10006 { background-image: url(/static/mobilemiddleages/img/enhancement/10006_2x.jpg); }
+    .enhancement_item10007 { background-image: url(/static/mobilemiddleages/img/enhancement/10007_2x.jpg); }
+    .enhancement_item10008 { background-image: url(/static/mobilemiddleages/img/enhancement/10008_2x.jpg); }
+    .enhancement_item10009 { background-image: url(/static/mobilemiddleages/img/enhancement/10009_2x.jpg); }
+    .enhancement_item10010 { background-image: url(/static/mobilemiddleages/img/enhancement/10010_2x.jpg); }
+    .enhancement_item10011 { background-image: url(/static/mobilemiddleages/img/enhancement/10011_2x.jpg); }
+    .enhancement_item10012 { background-image: url(/static/mobilemiddleages/img/enhancement/10012_2x.jpg); }
+    .enhancement_item10013 { background-image: url(/static/mobilemiddleages/img/enhancement/10013_2x.jpg); }
+    .enhancement_item10014 { background-image: url(/static/mobilemiddleages/img/enhancement/10014_2x.jpg); }
+    
+    /* Premium Economy */
+    .enhancement_item11001 { background-image: url(/static/mobilemiddleages/img/enhancement/11001_2x.jpg); }
+    .enhancement_item11002 { background-image: url(/static/mobilemiddleages/img/enhancement/11002_2x.jpg); }
+    .enhancement_item11003 { background-image: url(/static/mobilemiddleages/img/enhancement/11003_2x.jpg); }
+    .enhancement_item11004 { background-image: url(/static/mobilemiddleages/img/enhancement/11004_2x.jpg); }
+
+    .currency { background-image: url(/static/mobilemiddleages/img/shop/lottery/currency_2x.jpg); }
+    .currency_big { background-image: url(/static/mobilemiddleages/img/shop/lottery/currency_big_2x.jpg); }
+    .pveEnergy { background-image: url(/static/mobilemiddleages/img/shop/lottery/pveEnergy_2x.jpg); }
+    .pvpEnergy { background-image: url(/static/mobilemiddleages/img/shop/lottery/pvpEnergy_2x.jpg); }
+    .refill { background-image: url(/static/mobilemiddleages/img/shop/lottery/refill_2x.jpg); }
+    .skillpoints { background-image: url(/static/mobilemiddleages/img/shop/lottery/skillpoints_2x.jpg); }
+    .xp { background-image: url(/static/mobilemiddleages/img/shop/lottery/xp_2x.jpg); }
+
+    /* Page: Bank/Healer */
+    #healer #flavorHeader_content { background-image: url(/static/mobilemiddleages/img/healer/image_healer_2x.jpg); background-size: 320px auto; }
+    #bank #flavorHeader_content { background-image: url(/static/mobilemiddleages/img/bank/image_bank_2x.jpg); background-size: 320px auto; }
+    .inputWrap .deleteIcon { background-image: url(/static/mobilemiddleages/img/bank/icon_delete_2x.png); background-size: 18px; }
+
+    /* Page: Settings */
+    .chkBoxToggle input[type="checkbox"] { background-image: url(/static/mobilemiddleages/img/settings/on_off_2x.png); background-size: 100%; }
+    .chkBoxToggle #icloud { background-image: url(/static/mobilemiddleages/img/settings/cloud_2x.png); background-size: 100%; }
+    .chkBoxToggle #gcloud { background-image: url(/static/mobilemiddleages/img/settings/google_2x.png); background-size: 100%; }
+    .chkBoxToggle input[class="icloudInactive"] { background-image: url(/static/mobilemiddleages/img/settings/no_iCloud_2x.png) !important; left: 0; width: 94px;}
+    .chkBoxToggle input[class="gcloudInactive"] { background-image: url(/static/mobilemiddleages/img/settings/no_google_2x.png) !important; left: 0; width: 94px;}
+
+    /* /home (Key Visual, NewsFeed) */
+    /*body#home #scroller { background-image: url(/static/mobilemiddleages/img/home/keyvisual_2x.jpg); background-size: auto 150px; }*/
+    body#home #contentinner:after { background-image: url(/static/mobilemiddleages/img/home/keyvisual_2x.jpg); background-size: 320px auto; }
+    .news li:before { background-image: url(/static/mobilemiddleages/img/newsFeed/sprite_newsFeed_icons_2x.png); background-size: 31px auto; }
+    #newsFeed .news .marketing:before { background-image: url(/static/img/newsFeed/sprite_newsFeed_marketing_icons_2x.png); background-size: 26px auto; }
+    #newsFeed .news li > a, .commentslist a.linkedComment, .moreNav li, .infobox a { background-image: url(/static/mobilemiddleages/img/icons/icon_chevron_2x.png); background-size: 37px 23px; }
+    #btnMetaReport i { background-image: url(/static/mobilemiddleages/img/profile/icon_report_2x.png); background-size: 22px; }
+    .btnSlim span { background-image: url(/static/mobilemiddleages/img/profile/icon_report_2x.png); }
+    #btnMetaDelete i { background-image: url(/static/mobilemiddleages/img/profile/icon_delete_2x.png); background-size: 16px 22px; }
+    #btnMetaView i { background-image: url(/static/mobilemiddleages/img/profile/icon_view_2x.png); background-size: 26px 16px; }
+
+    /* /fight (Enemy Avatars), /profile (Info) */
+    .listView_rounded dd .avatar,
+    .profile_header .profile_avatar { background-image: url(/static/mobilemiddleages/img/fight/icon_avatar_2x.png); background-size: 100%; }
+    .listView_rounded dd .avatar_faction0,
+    .profile_header .profile_avatar_faction0 { background-image: url(/static/mobilemiddleages/img/fight/icon_avatar_2x.png); background-size: 100%; }
+    .listView_rounded dd .avatar_faction1,
+    .profile_header .profile_avatar_faction1 { background-image: url(/static/mobilemiddleages/img/factions/faction1_logo.png); background-size: 100%; }
+    .listView_rounded dd .avatar_faction2,
+    .profile_header .profile_avatar_faction2 { background-image: url(/static/mobilemiddleages/img/factions/faction2_logo.png); background-size: 100%; }
+    .listView_rounded dd .avatar_faction3,
+    .profile_header .profile_avatar_faction3 { background-image: url(/static/mobilemiddleages/img/factions/faction3_logo.png); background-size: 100%; }
+    
+    
+
+    /* Footer: Tab Bar */
+    #tabBar a span { background-image: url(/static/mobilemiddleages/img/footer/tabBar_sprite_2x.png); background-size: 300px auto, auto; }
+    #tabBar .active a span, #tabBar a:hover span { background-image: url(/static/mobilemiddleages/img/footer/tabBar_sprite_2x.png), -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, hsl(0, 0%, 29%)), color-stop(50%, hsl(0, 0%, 21%)), color-stop(50%, hsl(0, 0%, 15%)), color-stop(100%, hsl(0, 0%, 14%))); }
+
+    /* Page: More */
+    .moreNav a { background-image: url(/static/mobilemiddleages/img/more/morenav_sprite_2x.png?v=2.6); background-size: 50px auto; }
+
+    /* Message Boxes */
+    .msgCoupon.coupon_gf .msgBoxMsg { background: url(/static/img/notifications/icon_gameforge_2x.png) no-repeat 0 0; background-size: 40px 40px; }
+    .msgCoupon.coupon_ikariam .msgBoxMsg { background: url(/static/img/notifications/icon_ikariam_2x.png) no-repeat 0 0; background-size: 40px 40px; }
+    .msgSuccess .msgBoxMsg { background-image: url(/static/mobilemiddleages/img/notifications/icon_msgBox_success_2x.png); background-size: 40px 50px; }
+    .msgFail .msgBoxMsg { background-image: url(/static/mobilemiddleages/img/notifications/icon_msgBox_fail_2x.png); background-size: 40px 50px; }
+    .msgBox_highscore p { background-image: url(/static/mobilemiddleages/img/notifications/icon_cup_2x.png); background-size: auto 50px; }
+
+    /* Daily Login Bonus (Popup) */
+    #dailybonus .headerIcon { background-image: url(/static/mobilemiddleages/img/dailybonus/moneyBag_2x.png); background-size: auto 100px; }
+    #dailybonus_cards { background-image: url(/static/mobilemiddleages/img/dailybonus/cards_2x.png); background-size: 47px auto; }
+    #dailybonus .check { background-image: url(/static/mobilemiddleages/img/dailybonus/sprite_checkbox_2x.png); background-size: 27px auto; }
+    #dailybonus h4 { background-image: url(/static/mobilemiddleages/img/dailybonus/sprite_calendar_2x.png); background-size: 27px auto; }
+    #lottery #dailybonus .headerIcon { background-image: url(/static/mobilemiddleages/img/shop/lottery/cards_2x.png); background-size: 67px auto; }
+
+    /* /profile (Character Stats) */
+    #skillslist .skill_attribute:before { background-image: url(/static/mobilemiddleages/img/profile/sprite_icons_attributePoints_2x.png); background-size: 24px auto; }
+    #skillslist .skill_attribute span:after { background-image: url(/static/mobilemiddleages/img/profile/icon_info_2x.png); background-size: 16px; }
+    .profile_header:after, #country_header:after { background-image: url(/static/mobilemiddleages/img/profile/separator_horizontal_1_2x.png); background-size: 294px auto; }
+    #profile h5:after { background-image: url(/static/mobilemiddleages/img/profile/separator_horizontal_2_2x.png); background-size: 222px auto; }
+
+    /* Tutorial */
+    #storyBoxInner { background-image: url(/static/mobilemiddleages/img/tutorial/tutorialGuide_2x.jpg); background-size: auto 118px; }
+
+    /* /enhancement, /economy */
+    dl.listViewItemDetails dd li {
+        padding-top: 7px; padding-bottom: 7px;
+    }
+    dl.listViewItemDetails dd li.enhanceItemValue:before, dl.listViewItemDetails dd li.slaveItemValue:before {
+        top: 0px; background-image: url(/static/mobilemiddleages/img/enhancement/sprite_icons_enhancement_2x.png); background-size: 35px 250px;
+    }
+    dl.listViewItemDetails dt:after {
+        background-image: url(/static/mobilemiddleages/img/enhancement/bg_border_2x.png); background-size: 146px 171px;
+    }
+    .slider-scale-bar {
+        background-image: url(/static/mobilemiddleages/img/enhancement/slider_2x.png); background-size: 200px auto;
+    }
+    .slider-handle span {
+        background-image: url(/static/mobilemiddleages/img/enhancement/schieber_2x.png); background-size: 20px;
+    }
+
+    /* Language/Country Flag-Icons */
+    .iconLang { background-image: url(/static/img/lang/sprite_iconsFlag_2x.png); background-size: 67px auto; }
+
+    /* Header */
+    #header { background-image: url(/static/mobilemiddleages/img/header/header_bg_center_2x.png); background-size: auto 113px; }
+    #statsBar { background-image: url(/static/mobilemiddleages/img/header/header_bg_headline_2x.png); background-size: 320px 121px; }
+    .statsBarList a { background-image: url(/static/mobilemiddleages/img/header/statsBar_sprite_icons_2x.png); background-size: 33px auto; }
+    #statsBarXP .progressbar:after { background-image: url(/static/mobilemiddleages/img/header/mask_statsbarprogress_2x.png); background-size: auto 3px; }
+
+    /* Wheel of Fortune */
+    .lotteryCard { background-image: url(/static/mobilemiddleages/img/shop/lottery/card_front_common_2x.png); background-size: 47px 65px; }
+    .lotteryCard.card_uncommon { background-image: url(/static/mobilemiddleages/img/shop/lottery/card_front_uncommon_2x.png); }
+    .lotteryCard.card_rare { background-image: url(/static/mobilemiddleages/img/shop/lottery/card_front_rare_2x.png); }
+    #minorBtn p:before, #lotteryCards:before { background-image: url(/static/mobilemiddleages/img/profile/separator_horizontal_2_2x.png); background-size: 236px auto; }
+    #minorBtn p:after, #lotteryCards:after { background-image: url(/static/mobilemiddleages/img/profile/separator_horizontal_2_2x.png); background-size: 236px auto; }
+    .lotteryCard .lotteryItem { width: 36px; height: 46px; margin-top: 4px; }
+    .lotteryPanel { background-image: url(/static/mobilemiddleages/img/shop/lottery/bg_cards.jpg); background-size: 100px 100px; }
+
+    #minorBtn .btnReload .btn_text { background-image: url(/static/mobilemiddleages/img/shop/lottery/reload_2x.png); background-size: 18px auto; }
+    #mainBtn .btnSublabel.icon_premium { background-image: url(/static/mobilemiddleages/img/icons/icon_premium_medium_2x.png); background-size: 20px; }
+    #minorBtn .btnSublabel { background-image: url(/static/mobilemiddleages/img/icons/icon_premium_2x.png); background-size: 16px; }
+
+    /* Page: Missions */
+    #missions .panelDetails h5 .openClose { background-image: url(/static/mobilemiddleages/img/icons/icon_open_close_2x.png); background-size: 12px auto; }
+    #msgTop .msg_locked { background-image: url(/static/mobilemiddleages/img/icons/icon_locked_2x.png); background-size: 9px auto; }
+    #msgTop .msg_locked_rankup { background-image: url(/static/mobilemiddleages/img/icons/icon_locked_rankup_2x.png); background-size: 16px auto; }
+    #missions .missionRewards li { background-image: url(/static/mobilemiddleages/img/quest/sprite_icons_questReward_2x.png); background-size: 25px auto; }
+    .panelView .itemDisabled dl.listViewItemDetails dt, .missiondisabled .missionicon, .listViewItem_disabled dl.listViewItemDetails dt, .itemIcon .lock { background-image: url(/static/mobilemiddleages/img/icons/icon_locked2_2x.png); background-size: 60px auto; }
+    #descBox h5, #profile #descBox h5 { background-image: url(/static/mobilemiddleages/img/quest/attention_2x.png); background-size: 17px 15px; }
+
+    .button span { background-size: 20px; }
+    .btnEnergy span { background-image: url(/static/mobilemiddleages/img/icons/icon_pveEnergy_2x.png); }
+    .btnFury span { background-image: url(/static/mobilemiddleages/img/icons/icon_pvpEnergy_2x.png); }
+    .btnIgnore span { background-image: url(/static/mobilemiddleages/img/icons/icon_open_close_2x.png); }
+
+    
+    /* Panel */
+    .panelView .buttons, .listView .buttons { background-image: url(/static/mobilemiddleages/img/panel/panel_structure2_2x.jpg); background-size: 160px auto; }
+    .panelHeader { background-image: url(/static/mobilemiddleages/img/panel/panel_top01_2x.png); background-size: 40px auto; }
+    .panelSpacer { background-image: url(/static/mobilemiddleages/img/panel/panel_top02_2x.png); background-size: 40px auto; }
+    .panelDivider, .msgBoxQuest_bonus h5 { background-image: url(/static/mobilemiddleages/img/panel/panel_divider_2x.jpg); background-size: 40px auto; }
+    .panelDetails { background-image: url(/static/mobilemiddleages/img/panel/panel_structure_2x.jpg); background-size: 160px auto; }
+    .panelTitle { background-image: url(/static/mobilemiddleages/img/panel/panel_structure_top_2x.png); background-size: 40px auto; }
+    .panelFooter { background-image: url(/static/mobilemiddleages/img/panel/panel_bottom_2x.png); background-size: 40px auto; }
+    
+    .panelView .premium .panelHeader { background-image: url(/static/mobilemiddleages/img/panel/premium/panel_top01_2x.png); background-size: 40px auto; }
+    .panelView .premium .panelSpacer { background-image: url(/static/mobilemiddleages/img/panel/premium/panel_top02_2x.png); background-size: 40px auto; }
+    .panelView .premium .panelDetails { background-image: url(/static/mobilemiddleages/img/panel/premium/panel_structure_2x.jpg); background-size: 160px auto; }
+    .panelView .premium .panelTitle { background-image: url(/static/mobilemiddleages/img/panel/premium/panel_structure_top_2x.png); background-size: 40px auto; }
+    .panelView .premium .panelFooter { background-image: url(/static/mobilemiddleages/img/panel/premium/panel_bottom_2x.png); background-size: 40px auto; }
+    .panelView .premium dl.listViewItemDetails dt:after { background-image: url(/static/mobilemiddleages/img/enhancement/premium_frame_2x.png); background-size: 146px 171px; }
+    .panelView .premium .slider-scale-bar { background-image: url(/static/mobilemiddleages/img/panel/premium/slider_2x.png); background-size: 200px auto; }
+    .panelView .premium .slider-handle span { background-image: url(/static/mobilemiddleages/img/panel/premium/schieber_2x.png); background-size: 20px; }
+    
+    /* Quest/Missions Feedback-Boxes */
+    .fightItems h5 span { background-image: url(/static/mobilemiddleages/img/panel/panel_structure_2x.jpg); background-size: 160px auto; }
+    .msgBoxQuest h3 span:before, .msgBox_successheadline span:before { background-image: url(/static/mobilemiddleages/img/quest/ornament_left_2x.png); background-size: 32px 13px; }
+    .msgBoxQuest h3 span:after, .msgBox_successheadline span:after { background-image: url(/static/mobilemiddleages/img/quest/ornament_right_2x.png); background-size: 32px 13px; }
+
+    /* Content */
+    .icon_blood, .icon_currency { background-image: url(/static/mobilemiddleages/img/icons/icon_currency_2x.png); }
+    .icon_damage { background-image: url(/static/mobilemiddleages/img/icons/icon_damage_2x.png); }
+    .icon_xp { background-image: url(/static/mobilemiddleages/img/icons/icon_xp_2x.png); }
+    .icon_energy { background-image: url(/static/mobilemiddleages/img/icons/icon_pveEnergy_skills_2x.png); }
+    .icon_premium { background-image: url(/static/mobilemiddleages/img/icons/icon_premium_2x.png); }
+    .icon_pve { background-image: url(/static/mobilemiddleages/img/icons/icon_pve_2x.png); }
+    .icon_pvp { background-image: url(/static/mobilemiddleages/img/icons/icon_pvp_2x.png); }
+    
+    /* ContentSection-Tabs Grouping-Nav */
+    .tabsNav { background-image: url(/static/mobilemiddleages/img/quest/icon_tabsNav_sprite_2x.png); background-size: 56px 56px; }
+
+    /* Worldmap */
+    #worldmap1 { background-image: url(/static/mobilemiddleages/img/quest/worldmap/bg_worldmap_2x.jpg?v=4); background-size: 320px 225px; }
+    #worldmap2 { background-image: url(/static/mobilemiddleages/img/quest/worldmap/bg_worldmap_notos_2x.jpg?v=4); background-size: 320px 225px; }
+    .countryMarker a i { background-image: url(/static/mobilemiddleages/img/quest/worldmap/marker/target_2x.png); background-size: 32px 30px; }
+    .countryMarker.conquered a i { background-image: url(/static/mobilemiddleages/img/quest/worldmap/marker/sprite_countrylevels_2x.png); background-size: 32px auto; }
+    .toggleMapBtn { background-image: url(/static/mobilemiddleages/img/quest/worldmap/btnToggle_2x.png); background-size: 300px 100px; }
+    .mapchangeicon.worldmap2 { background-image: url(/static/mobilemiddleages/img/quest/worldmap/marker/mapchange_button_left_2x.png); }
+    .mapchangeicon.worldmap1 { background-image: url(/static/mobilemiddleages/img/quest/worldmap/marker/mapchange_button_right_2x.png); }
+    .mapchangeicon.locked { background-image: url(/static/mobilemiddleages/img/quest/worldmap/marker/mapchange_button_locked_2x.png); }
+    #worldmap1 .countryHiglight { background-image: url(/static/mobilemiddleages/img/quest/worldmap/marker/sprite_regions_2x.png?v=4); background-size: 1280px auto; }
+    #worldmap2 .countryHiglight { background-image: url(/static/mobilemiddleages/img/quest/worldmap/marker/sprite_regions_notos_2x.png?v=4); background-size: 1280px auto; }
+    
+    /* Payment-Events */
+    .featuredSale .appIcon {
+        background-image: url(/static/mobilemiddleages/img/shop/sale_2x.png); background-size: 72px;
+    }
+    .offer_sale {
+        background-image: url(/static/mobilemiddleages/img/shop/sale_small_2x.png); background-size: 16px;
+    }
+    
+    /* Separator */
+    .seperatorSmall, .seperatorLarge { background-image: url(/static/mobilemiddleages/img/profile/separator_line_2x.png); background-size: auto 6px; }
+    .seperatorLarge .symbol { background-image: url(/static/mobilemiddleages/img/profile/separator_horizontal_1_2x.png); background-size: auto 27px; }
+    .seperatorSmall .symbol { background-image: url(/static/mobilemiddleages/img/profile/separator_horizontal_2_2x.png); background-size: auto 20px; }
+
+    #dice { background-image: url(/static/mobilemiddleages/img/shop/lottery/dice_2x.png); background-size: 92px 98px; }
+       
+    /* Page: Coupons */
+    .coupon-header {
+        background-image: url(/static/img/coupon/header_middleages_2x.jpg); background-size: auto 150px;
+    }
+    
+    /* Netzclub */
+    #rewardCode .logo_netzclub { background-image: url(/static/mobilemiddleages/img/netzclub/nc_logo_2x.png); background-size: 203px 58px; }
+    #rewardCode .container { background-image: url(/static/mobilemiddleages/img/netzclub/bg_2x.png); background-size: 320px auto; }
+    #rewardCode { background-image: url(/static/mobilemiddleages/img/netzclub/bg_border_top_2x.png); background-size: 41px auto; }
+    #rewardCode.msgFail .message { background-image: url(/static/mobilemiddleages/img/notifications/icon_msgBox_fail_2x.png); background-size: 40px 50px; }
+    #rewardCode.msgSuccess .message { background-image: url(/static/mobilemiddleages/img/notifications/icon_msgBox_success_2x.png); background-size: 40px 50px; }
+
+    #lockMsgContainer .msgBox_inner .icon_btnClose, #coupon_overlay .icon_btnClose {
+        background-image: url(/static/mobilemiddleages/img/icons/x_close_2x.png); background-size: 31px 31px;
+    }
+    
+    .banned .banViewIcon {
+        background-image: url(/static/mobilemiddleages/img/ban/ban_2x.png); background-size: 96px 96px;
+    }
+    .muted .banViewIcon {
+        background-image: url(/static/mobilemiddleages/img/ban/mute_2x.png); background-size: 96px 96px;
+    }
+
+    .button {
+        background: url(/static/mobilemiddleages/img/quest/splatter_2x.png) repeat-x, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, #57abf2), color-stop(4%, #2376bc), color-stop(48%, #0e3e66), color-stop(52%, #01080e), color-stop(100%, #082944));
+        background-size: 130px 100%;
+    }
+    .button:active,
+    .button.active {
+        background: url(/static/mobilemiddleages/img/quest/splatter_2x.png) repeat-x, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, #5bb3fe), color-stop(4%, #2a8bde), color-stop(48%, #145993), color-stop(52%, #0f3e6b), color-stop(100%, #051f34));
+        background-size: 130px 100%;
+    }
+    .btnDisabled,
+    .btnDisabled:active,
+    .btnDisabled.active {
+        background: url(/static/mobilemiddleages/img/quest/splatter_2x.png) repeat-x, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, #d6d6d6), color-stop(49%, #3b3b3b), color-stop(51%, #000),  color-stop(100%, #545454));
+    }
+
+    .loading {
+        background-image: url(/static/mobilemiddleages/img/icons/loading_2x.gif); background-size: 35px;
+    }
+    .nomercy .arrowUp {
+        background-image: url(/static/mobilemiddleages/img/fight/arrow_up_2x.png); background-size: 75px 25px;
+    }
+    .nomercy .arrowDown {
+        background-image: url(/static/mobilemiddleages/img/fight/arrow_down_2x.png); background-size: 76px 38px;
+    }
+
+    #content.intro #contentinner {
+        background-image: url(/static/mobilemiddleages/img/tutorial/intro_2x.png); background-size: 630px 570px;
+    }
+    #content.levelup #contentinner {
+        background-image: url(/static/mobilemiddleages/img/tutorial/levelup_2x.png); background-size: 707px 636px;
+    }
+    #shopOffer a.add {
+        background-image: url(/static/mobilemiddleages/img/shop/add_2x.png); background-size: 43px 38px;
+    }
+    #shopOffer a.sub {
+        background-image: url(/static/mobilemiddleages/img/shop/sub_2x.png); background-size: 43px 38px;
+    }
+    #shopOffer {
+        background-image: url(/static/mobilemiddleages/img/shop/offer_2x.png); background-size: 311px 282px;
+    }
+    #shopOffer .restOffer em .amount {
+        background: url(/static/mobilemiddleages/img/shop/attribute_2x.png) no-repeat left 0px, url(/static/mobilemiddleages/img/shop/attribute_2x.png) no-repeat right 0px; background-size: 40px 40px;
+    }
+    
+    .protection {
+        background-image: url(/static/mobilemiddleages/img/icons/protection_2x.png); background-size: 16px 18px;
+    }
+    .msgBox_overlay.confirm .headerIcon, #confirmDelete .headerIcon{
+        background-image: url(/static/mobilemiddleages/img/notifications/icon_msgBox_fail_2x.png);background-size: 100%;
+    }
+
+    /* Achievements */
+    #achievementlist div.achievementicon {
+        background-image: url('/static/mobilemiddleages/img/achievements/achievementiconborder_2x.png');
+    }
+    #achievementlist div.borderedtext {
+        background-image: url('/static/mobilemiddleages/img/achievements/achievementborder_2x.png');
+    }
+    #achievementlist div.rankicon {
+        background-image: url('/static/mobilemiddleages/img/achievements/rankspritesheet_2x.png');
+    }
+/*}*/

@@ -1,0 +1,19 @@
+body {
+    background-image: url(/static/mobilemiddleages/img/bg/background_pattern.jpg);
+}
+body#error {
+    background-image: url(/static/mobilemiddleages/img/ban/bg_ban.jpg);
+}
+body#ban {
+    background-image: url(/static/mobilemiddleages/img/ban/bg_ban.jpg);
+}
+
+.facebook_button em {
+    background-image: url(/static/img/settings/facebook_l.png);
+}
+.facebook_button span {
+    background-image: url(/static/img/settings/facebook_m.png);
+}
+.facebook_button b {
+    background-image: url(/static/img/settings/facebook_r.png);
+}

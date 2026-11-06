@@ -1,0 +1,328 @@
+/* Shared responsive and scrolling safeguards for every page. */
+html {
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  margin: 0;
+  overflow-y: visible !important;
+  overflow-x: hidden;
+  overscroll-behavior-y: auto;
+  scroll-behavior: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* The legacy header used a negative bottom margin that put the first tools
+   bar inside the frame. Keep both tools bars in normal flow at every width. */
+.header-row {
+  align-items: stretch;
+  width: 100%;
+  height: 102px;
+  min-height: 102px;
+  margin-bottom: 0 !important;
+  overflow: hidden;
+}
+
+/* The local header art is a 2x retina asset, matching the official 185:102
+   rendered header size at every viewport width. */
+.header-row .header {
+  flex: 0 0 auto;
+  width: 185px !important;
+  max-width: calc(100% - 44px);
+  height: 102px !important;
+  object-fit: contain;
+}
+
+.header-row .header_ext {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 102px !important;
+  background-size: auto 102px;
+}
+
+/* Match the official 140px title area layered over the center artwork. */
+.header-text {
+  top: 0 !important;
+  left: 50%;
+  width: 140px;
+  height: 38px;
+  transform: translateX(-50%);
+  font-size: 16px !important;
+  line-height: 34px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-row + .tabsOuter {
+  clear: both;
+  position: relative;
+  z-index: 2;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 100vw plus horizontal padding was making list rows wider than phones. */
+.listView,
+.listView .listViewItem {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+/* Keep the shared tab strip inside the page without changing its original
+   intrinsic-width, rounded segmented-button styling. */
+.tabsOuter {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.tabsWrap {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.tabs {
+  max-width: 100%;
+}
+
+.tabs a {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  /* iOS/Android browsers zoom inputs below 16px when they receive focus. */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  .tabsOuter {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    height: auto !important;
+    margin: 0 !important;
+    clear: both;
+    padding: 8px 0 12px !important;
+    overflow: visible !important;
+  }
+
+  .tabsWrap {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    height: auto !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  .tabs {
+    display: flex !important;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    float: none !important;
+    width: max-content;
+    max-width: calc(100% - 20px);
+    min-width: 0;
+    height: auto !important;
+    margin: 10px auto;
+    overflow: visible !important;
+  }
+
+  /* The six-link tool navigation gets a bounded flex line so it wraps cleanly
+     instead of keeping its desktop intrinsic width and being clipped. Smaller
+     tab groups (such as Attributes/Achievements) retain their compact shape. */
+  .tabs:has(> li:nth-child(6)) {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+
+  .tabs li {
+    display: block;
+    float: none !important;
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .tabs a {
+    width: auto;
+    min-height: 0;
+    height: auto;
+    padding: 6px 3px;
+    font-size: clamp(9px, 2.7vw, 12px);
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .tabs:has(> li:nth-child(6)) li {
+    flex: 0 0 auto;
+  }
+
+  /* The legacy pages pull the next section upward with a negative margin;
+     that becomes an overlap once the navigation wraps onto two rows. */
+  .listView {
+    margin-bottom: 0 !important;
+  }
+}
+
+.page-description {
+  overflow-wrap: anywhere;
+}
+
+.best-plan-results {
+  position: relative;
+  width: 100%;
+}
+
+.best-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 120px));
+  gap: 8px;
+  justify-content: start;
+  align-items: start;
+}
+
+.best-plan-card {
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  cursor: pointer;
+  width: 120px;
+  min-height: 143px;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  text-align: center;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 0;
+}
+
+.best-plan-card:hover,
+.best-plan-card:focus-visible,
+.best-plan-card[aria-expanded="true"] {
+  border-color: rgba(230,166,76,0.95);
+  outline: none;
+}
+
+.best-plan-image {
+  display: block;
+  width: 100%;
+  height: 118px;
+  object-fit: cover;
+}
+
+.best-plan-quantity {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+.best-plan-quantity {
+  min-height: 24px;
+  padding: 4px 2px 2px;
+  color: #fff;
+  background: rgba(55,55,55,0.96);
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.best-plan-detail {
+  position: absolute;
+  z-index: 5;
+  width: 176px;
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 6px;
+  background: rgba(85,80,76,0.95);
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.best-plan-detail h5 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.best-plan-detail ul {
+  margin: 0;
+  padding-left: 19px;
+}
+
+.best-plan-detail li {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.page-description h1,
+.page-description h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+@supports (overflow: clip) {
+  html {
+    overflow-x: clip;
+  }
+
+  body {
+    overflow-x: clip;
+  }
+}
+
+@media (max-width: 600px) {
+  .listView .listViewItem {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+
+  .best-plan-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .best-plan-card {
+    width: 100%;
+    min-height: 0;
+  }
+
+  .best-plan-image {
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .best-plan-detail {
+    width: min(176px, calc(100% - 16px));
+  }
+}
