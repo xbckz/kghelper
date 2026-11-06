@@ -8,6 +8,7 @@ body.game-list-page .game-list-main *::after {
 }
 
 body.game-list-page .game-list-main {
+  display: flow-root;
   width: auto;
   margin: 0;
   padding: 10px;
