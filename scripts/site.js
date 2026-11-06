@@ -52,7 +52,7 @@
       </header>
       ${tabs ? `<nav class="tabsOuter" aria-label="Section navigation"><div class="tabsWrap"><ul class="tabs">${tabs}</ul></div></nav>` : ""}
     `;
-    const main = document.querySelector(".page-main, .equipment-main");
+    const main = document.querySelector(".page-main, .equipment-main, .game-list-main");
     const tabBar = headerMount.querySelector(".tabsOuter");
     if (main && tabBar) {
       const bottomTabs = tabBar.cloneNode(true);
