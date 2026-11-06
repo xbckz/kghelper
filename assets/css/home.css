@@ -305,6 +305,8 @@ body::after {
     cursor: pointer;
 }
 
+.comingSoonItem { cursor: default; }
+
 /* Style inner text + arrow alignment */
 .nestedItem .menuTitle {
     display: flex;
