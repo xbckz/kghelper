@@ -5,7 +5,9 @@ const vm = require('node:vm');
 const math = require('../scripts/vassal-math.js');
 const context = { window: {} };
 vm.runInNewContext(fs.readFileSync(require.resolve('../scripts/vassal-cards.js'), 'utf8'), context);
-const data = Array.from(context.window.KnightVassals.items, item => ({ ...item, owned: BigInt(item.defaultOwned), available: true }));
+// Keep the supplied example position independent of new-user defaults.
+const exampleOwned = [43150, 17614, 1300, 1500, 500, 587, 250, 298, 202, 125, 200, 200, 200, 0];
+const data = Array.from(context.window.KnightVassals.items, (item, i) => ({ ...item, owned: BigInt(exampleOwned[i]), available: true }));
 const price = item => BigInt(item.initialPrice) + BigInt(item.priceIncrement) * item.owned;
 const income = items => items.reduce((sum, item) => sum + BigInt(item.income) * item.owned, 0n);
 function reference(items, budget, target, bonus = '0') {
@@ -37,6 +39,7 @@ let seed = 123456789;
 const random = max => { seed = (1664525 * seed + 1013904223) >>> 0; return seed % max; };
 test('table and pricing regression', () => {
   assert.equal(data.length, 14);
+  assert.ok(context.window.KnightVassals.items.every(item => item.defaultOwned === 0));
   assert.equal(income(data), 1844229000n);
   assert.equal(price(data[0]), 45318000n);
   assert.equal(price(data[13]), 1000000n);
