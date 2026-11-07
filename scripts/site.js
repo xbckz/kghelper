@@ -14,7 +14,6 @@
     basics: { title: "Basics", label: "Basics", path: "tips/" },
     tools: { title: "Tools", label: "Tools", path: "tools/" },
     bestValueIncome: { title: "Best Value Vassals", label: "Best Value Vassals", path: "tools/best-value-income/" },
-    bestArmy: { title: "Best Army Calc", label: "Best Army Calc", path: "tools/best-army/" },
     priceIncome: { title: "Price Prediction Income", label: "Price Predict (Income)", path: "tools/price-prediction-income/" }
   };
   const groups = {
@@ -25,10 +24,9 @@
     premium: ["home", "weapons", "shields", "armour", "premium"],
     vassals: ["home", "vassals"],
     basics: ["home", "basics"],
-    tools: ["home", "bestValueIncome", "bestArmy", "priceIncome"],
-    bestValueIncome: ["home", "bestValueIncome", "bestArmy", "priceIncome"],
-    bestArmy: ["home", "bestValueIncome", "bestArmy", "priceIncome"],
-    priceIncome: ["home", "bestValueIncome", "bestArmy", "priceIncome"]
+    tools: ["home", "bestValueIncome", "priceIncome"],
+    bestValueIncome: ["home", "bestValueIncome", "priceIncome"],
+    priceIncome: ["home", "bestValueIncome", "priceIncome"]
   };
 
   const headerMount = document.querySelector("[data-site-header]");

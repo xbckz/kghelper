@@ -8,51 +8,39 @@
   <meta name="description" content="Predict the silver cost of reaching an income goal with Knight Game vassals.">
   <title>Price Prediction Income — Knight Game Helper</title>
   <link rel="icon" href="assets/images/game/source/mobilemiddleages/img/factions/faction1_logo.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/site.css">
-  <link rel="stylesheet" href="assets/css/site-fixes.css">
-  <link rel="stylesheet" href="assets/css/kg-assets.css?v=20261106-5">
-  <link rel="stylesheet" href="assets/css/income-calculators.css?v=20261107-1">
-  <script src="scripts/site.js?v=20261107-1" defer></script>
-  <script src="scripts/income-calculators.js?v=20261107-1" defer></script>
+  <link rel="stylesheet" href="assets/css/site.css?v=20261107-11">
+  <link rel="stylesheet" href="assets/css/site-fixes.css?v=20261107-11">
+  <link rel="stylesheet" href="assets/css/kg-assets.css?v=20261107-11">
+  <link rel="stylesheet" href="assets/css/game-list.css?v=20261107-11">
+  <link rel="stylesheet" href="assets/css/income-calculators.css?v=20261107-11">
+  <script src="scripts/site.js?v=20261107-11" defer></script>
+  <script src="scripts/vassal-cards.js?v=20261107-11" defer></script>
+  <script src="scripts/vassal-math.js?v=20261107-11" defer></script>
+  <script src="scripts/income-calculators.js?v=20261107-11" defer></script>
+  <script src="scripts/number-format.js?v=20261107-11" defer></script>
+  <script src="scripts/calculator-details.js?v=20261107-11" defer></script>
 </head>
 <body data-page="priceIncome" data-root="./">
   <a class="skip-link" href="#main">Skip to content</a>
   <div data-site-header></div>
-  <main id="main" class="page-main">
+  <main id="main" class="page-main income-calculator">
     <header class="page-description">
-      <div>
-        <h1>Price Prediction Income</h1>
-        <p>Estimate the silver needed to reach an income goal using vassals you can currently recruit.</p>
-      </div>
+      <h1>Price Predict Income</h1>
+      <p>Enter the income you want to achieve, then your bonus, you will get the amount of silver needed to reach the goal from your CURRENT income.</p>
+      <p>Your current position (vassals owned) must first be filled in the Best Value Vassals Calc page.</p>
     </header>
-
-    <div class="listView income-calculator">
-      <section class="listViewItem calculator-section" aria-labelledby="income-goal-heading">
-        <div class="calculator-section-heading">
-          <h2 id="income-goal-heading">Set your vassal income goal</h2>
-          <p>Current counts and recruitable status come from Best Value Vassals Calc. Change them there to update this estimate.</p>
-        </div>
-
-        <p class="current-income-line" data-current-income aria-live="polite">Current vassal income will appear here.</p>
-
-        <form data-price-prediction-form novalidate>
-          <div class="calculator-controls calculator-controls-goal">
-            <label class="calculator-field" for="target-income">
-              <span>Target income</span>
-              <input id="target-income" name="target-income" type="text" inputmode="numeric" autocomplete="off" placeholder="Enter target income" required>
-            </label>
-            <label class="calculator-field calculator-field-bonus" for="bonus">
-              <span>Bonus percent</span>
-              <input id="bonus" name="bonus" type="text" inputmode="decimal" autocomplete="off" value="0" required>
-            </label>
-            <button class="button calculator-button" type="submit">Calculate price</button>
-          </div>
-          <p class="calculator-hint">The estimate uses the same saved vassal counts, linear price increases, and income bonus in each purchase.</p>
+    <div class="listView">
+      <section class="listViewItem calculator-section">
+        <div class="calculator-section-heading"><span class="silver-icon" aria-hidden="true"></span><h2>Set Your Income Goal</h2></div>
+        <p class="calculator-instructions">You can set or check your current saved income in the <a href="tools/best-value-income/">Best Value Vassals Calc</a> page.</p>
+        <form data-price-prediction-form class="calculator-controls" novalidate>
+          <input id="target-income" type="text" inputmode="numeric" data-number-format autocomplete="off" placeholder="Enter target income" aria-label="Target income" required>
+          <input id="bonus" type="text" inputmode="decimal" data-number-format autocomplete="off" placeholder="Bonus %" aria-label="Bonus percent" required>
+          <button class="button" type="submit">Calculate</button>
         </form>
-
-        <section class="result-panel calculator-results" id="best-plan" aria-labelledby="predicted-price-heading" aria-live="polite" aria-atomic="false">
-          <h2 id="predicted-price-heading">Predicted price</h2>
-          <div id="best-plan-content">Your estimated purchase plan will appear here after you set an income goal.</div>
+        <section class="calculator-results" id="best-plan" aria-labelledby="predicted-price-heading" aria-live="polite">
+          <h2 id="predicted-price-heading">Predicted Price</h2>
+          <div id="best-plan-content">Your budget needed will appear here after setting the goal and bonus.</div>
         </section>
       </section>
     </div>

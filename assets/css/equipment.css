@@ -96,35 +96,4 @@ body.game-list-page .equipment-item .listViewItemDetails dd li strong {
   overflow-wrap: break-word;
 }
 
-/* Match the in-game .button rules from source-css/style.css and advanced.css. */
-.equipment-specials-button {
-  display: inline-block;
-  margin-top: 5px;
-  padding: 10px 12px;
-  min-width: 70px;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  background: url("../images/game/source/mobilemiddleages/img/quest/splatter_2x.png") repeat-x, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, #57abf2), color-stop(4%, #2376bc), color-stop(48%, #0e3e66), color-stop(52%, #01080e), color-stop(100%, #082944));
-  background-size: 130px 100%;
-  font: bold 13px "Times", serif;
-  text-decoration: none;
-  text-shadow: 0 1px 1px #000;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 2px #000;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 2px #000;
-  cursor: pointer;
-}
-
-.equipment-specials-button:hover,
-.equipment-specials-button:focus-visible {
-  color: #fff;
-  background-color: #2376bc;
-}
-
-.equipment-specials-button:active,
-.equipment-specials-button.active {
-  background: url("../images/game/source/mobilemiddleages/img/quest/splatter_2x.png") repeat-x, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, #5bb3fe), color-stop(4%, #2a8bde), color-stop(48%, #145993), color-stop(52%, #0f3e6b), color-stop(100%, #051f34));
-  background-size: 130px 100%;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 10px #000;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 10px #000;
-}
+.equipment-specials-button { margin-top: 5px; }

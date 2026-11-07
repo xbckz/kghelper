@@ -401,33 +401,44 @@ a.nestedItem:focus-visible { filter: brightness(1.09); }
   border-top: 1px solid rgba(255,255,255,.12);
 }
 
-.button {
-  border: 1px solid #000;
-  border-top: 0;
+/* Shared original Knight Game button: same as Scroll to specials. */
+.button,
+.equipment-specials-button {
+  display: inline-block;
+  padding: 10px 12px;
+  min-width: 70px;
+  border: none;
   border-radius: 4px;
   color: #fff;
-  background: #2376bc;
-  font: bold 13px 'Times', serif;
+  background: url("../images/game/source/mobilemiddleages/img/quest/splatter_2x.png") repeat-x, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, #57abf2), color-stop(4%, #2376bc), color-stop(48%, #0e3e66), color-stop(52%, #01080e), color-stop(100%, #082944));
+  background-size: 130px 100%;
+  font: bold 13px "Times", serif;
+  text-decoration: none;
   text-shadow: 0 1px 1px #000;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 0 2px 1px rgba(0,0,0,.5), 0 1px 2px #000;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 0 2px 1px rgba(0,0,0,.5), 0 1px 2px #000;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 2px #000;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 2px #000;
+  cursor: pointer;
 }
 
 .button:hover,
-.button:focus-visible { color: #fff; background: #348bd2; }
-
-.button:disabled {
-  cursor: not-allowed;
-  opacity: .58;
-  filter: saturate(.55);
+.equipment-specials-button:hover,
+.button:focus-visible,
+.equipment-specials-button:focus-visible {
+  color: #fff;
+  background-color: #2376bc;
 }
 
 .button:active,
-.button.active {
-  background: #5bb3fe;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 0 2px 1px rgba(0,0,0,.5), 0 1px 10px #000;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 0 2px 1px rgba(0,0,0,.5), 0 1px 10px #000;
+.equipment-specials-button:active,
+.button.active,
+.equipment-specials-button.active {
+  background: url("../images/game/source/mobilemiddleages/img/quest/splatter_2x.png") repeat-x, -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, #5bb3fe), color-stop(4%, #2a8bde), color-stop(48%, #145993), color-stop(52%, #0f3e6b), color-stop(100%, #051f34));
+  background-size: 130px 100%;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 10px #000;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 1px 10px #000;
 }
+.button:focus-visible, .equipment-specials-button:focus-visible { outline: 2px solid #73b9ed; outline-offset: 2px; }
+.button:disabled, .equipment-specials-button:disabled { cursor: not-allowed; opacity: .58; }
 
 .button.button-quiet {
   background: #39302a;

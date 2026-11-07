@@ -16,7 +16,7 @@ Then open `http://localhost:8000/`.
 
 - `index.html` is the home page.
 - Root route folders hold the pages served at extensionless URLs: `tips/`, `vassals/`, `equipment/`, and `tools/`.
-- Nested route folders hold category and calculator pages, such as `equipment/weapons/` and `tools/best-army/`.
+- Nested route folders hold category and calculator pages, such as `equipment/weapons/` and `tools/best-value-income/`.
 - `assets/css/` and `scripts/` hold the shared styles and site scripts.
 - `assets/images/game/source/` keeps Knight Game artwork in its original static path structure.
 - `assets/source-css/` contains the five supplied Knight Game stylesheets.
@@ -28,3 +28,13 @@ GitHub Pages serves each route folder's `index.html` as an extensionless URL, su
 The equipment section has the three Knight Game categories: Weapons, Shields, and Armour. Its 30 regular item images and five premium images per category are mapped from the IDs in `retina.css`. The Vassals guide lists 14 regular vassals from weakest to strongest, with positive income, attack, defence, original game portraits, and the game's panel spacing. The Best Value Vassals and Price Prediction Income calculators use the user-provided table of current counts, initial prices, and price increments, alongside income values from the Vassals guide. Counts and recruitable settings are saved locally and shared between the calculators. Vassals with an existing count start as recruitable; zero-count vassals start turned off until selected. Four additional Premium Economy portraits are mapped in CSS, but the supplied HTML does not provide their names or stats. War Game values are not reused.
 
 The page structure follows the local `wgweb` source. The visual layer uses the Knight Game textures, panel trims, icons and sprites. The supplied game stylesheets and all 263 referenced images are stored locally, so the site does not need the game server at runtime. See [ASSET_SOURCES.md](ASSET_SOURCES.md) for the mapping.
+
+Calculator arithmetic lives in `scripts/vassal-math.js`. It uses exact integer prices, counts and income, exact decimal bonuses, and batched purchases that preserve WGHelp's greedy price-to-income ordering (including ties and affordability). There is no purchase-count cutoff. Prediction does not change saved ownership; the budget calculator saves the resulting counts.
+
+Run the calculator tests with Node.js:
+
+```powershell
+node --test tests/vassal-math.test.cjs
+```
+
+The suite compares 1,000 randomized plans with an independent single-purchase reference and covers the supplied table, targets above 100,000 purchases, large integers, bonuses, locked vassals, and budget conservation.

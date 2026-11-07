@@ -1,13 +1,13 @@
 /* Shared Knight Game list panels: source frame, leather textures, icon sprite,
    stat spacing, and title treatment across Vassals and Equipment. */
-body.game-list-page .game-list-main,
-body.game-list-page .game-list-main *,
-body.game-list-page .game-list-main *::before,
-body.game-list-page .game-list-main *::after {
+:is(body.game-list-page, .calculator-vassals) .game-list-main,
+:is(body.game-list-page, .calculator-vassals) .game-list-main *,
+:is(body.game-list-page, .calculator-vassals) .game-list-main *::before,
+:is(body.game-list-page, .calculator-vassals) .game-list-main *::after {
   box-sizing: content-box;
 }
 
-body.game-list-page .game-list-main {
+:is(body.game-list-page, .calculator-vassals) .game-list-main {
   display: flow-root;
   width: auto;
   margin: 0;
@@ -16,12 +16,12 @@ body.game-list-page .game-list-main {
   font: 13px/1.3 "Helvetica Neue", Arial, sans-serif;
 }
 
-body.game-list-page .game-list-main .page-description {
+:is(body.game-list-page, .calculator-vassals) .game-list-main .page-description {
   box-sizing: border-box;
   margin: 0 -10px 15px;
 }
 
-body.game-list-page .listView {
+:is(body.game-list-page, .calculator-vassals) .listView {
   display: block;
   float: left;
   clear: both;
@@ -36,14 +36,14 @@ body.game-list-page .listView {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-body.game-list-page .listView::after {
+:is(body.game-list-page, .calculator-vassals) .listView::after {
   display: block;
   clear: both;
   height: 0;
   content: "";
 }
 
-body.game-list-page .listView > .listViewItem {
+:is(body.game-list-page, .calculator-vassals) .listView > .listViewItem {
   position: relative;
   display: block;
   float: left;
@@ -60,34 +60,34 @@ body.game-list-page .listView > .listViewItem {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-body.game-list-page .listView > .listViewItem:nth-child(even) {
+:is(body.game-list-page, .calculator-vassals) .listView > .listViewItem:nth-child(even) {
   background: rgba(0, 0, 0, 0.45) !important;
 }
 
-body.game-list-page .panelHeader {
+:is(body.game-list-page, .calculator-vassals) .panelHeader {
   width: 100%;
   height: 9px;
   background: url("../images/game/source/mobilemiddleages/img/panel/panel_top01_2x.png") repeat-x;
   background-size: 40px auto;
 }
 
-body.game-list-page .panelTitle {
+:is(body.game-list-page, .calculator-vassals) .panelTitle {
   position: relative;
   background: url("../images/game/source/mobilemiddleages/img/panel/panel_structure_top_2x.png") repeat-x;
   background-size: 40px auto;
 }
 
-body.game-list-page .listViewItem > .panelHeader,
-body.game-list-page .listViewItem > .panelTitle,
-body.game-list-page .listViewItem > .panelSpacer,
-body.game-list-page .listViewItem > .panelFooter {
+:is(body.game-list-page, .calculator-vassals) .listViewItem > .panelHeader,
+:is(body.game-list-page, .calculator-vassals) .listViewItem > .panelTitle,
+:is(body.game-list-page, .calculator-vassals) .listViewItem > .panelSpacer,
+:is(body.game-list-page, .calculator-vassals) .listViewItem > .panelFooter {
   width: auto !important;
   margin-right: -10px;
   margin-left: -10px;
 }
 
-body.game-list-page .panelTitle h4,
-body.game-list-page .listViewItem h4 {
+:is(body.game-list-page, .calculator-vassals) .panelTitle h4,
+:is(body.game-list-page, .calculator-vassals) .listViewItem h4 {
   margin: 0;
   padding: 12px 0 7px 20px;
   color: #fff;
@@ -96,14 +96,14 @@ body.game-list-page .listViewItem h4 {
   background: none;
 }
 
-body.game-list-page .panelSpacer {
+:is(body.game-list-page, .calculator-vassals) .panelSpacer {
   width: 100%;
   height: 13px;
   background: url("../images/game/source/mobilemiddleages/img/panel/panel_top02_2x.png") repeat-x;
   background-size: 40px auto;
 }
 
-body.game-list-page .panelDetails {
+:is(body.game-list-page, .calculator-vassals) .panelDetails {
   position: relative;
   margin-right: -10px;
   margin-left: -10px;
@@ -112,19 +112,19 @@ body.game-list-page .panelDetails {
   background-size: 160px auto;
 }
 
-body.game-list-page .panelFooter {
+:is(body.game-list-page, .calculator-vassals) .panelFooter {
   width: 100%;
   height: 17px;
   background: url("../images/game/source/mobilemiddleages/img/panel/panel_bottom_2x.png") repeat-x;
   background-size: 40px auto;
 }
 
-body.game-list-page .listViewItemDetails {
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails {
   margin: 0;
   padding: 0 0 5px;
 }
 
-body.game-list-page .listViewItemDetails.clearfix::after {
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails.clearfix::after {
   display: block;
   clear: both;
   height: 0;
@@ -132,7 +132,7 @@ body.game-list-page .listViewItemDetails.clearfix::after {
   visibility: hidden;
 }
 
-body.game-list-page .listViewItemDetails dt {
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails dt {
   position: relative;
   float: left;
   width: 125px;
@@ -141,7 +141,7 @@ body.game-list-page .listViewItemDetails dt {
   padding: 12px 9px 9px 12px;
 }
 
-body.game-list-page .listViewItemDetails dt::after {
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails dt::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -154,20 +154,20 @@ body.game-list-page .listViewItemDetails dt::after {
   background-size: 146px 171px;
 }
 
-body.game-list-page .itemIcon {
+:is(body.game-list-page, .calculator-vassals) .itemIcon {
   width: 100%;
   height: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-body.game-list-page .listViewItemDetails dd {
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails dd {
   margin: 0;
   padding: 0;
   font-size: 12px;
 }
 
-body.game-list-page .listViewItemDetails dd ul {
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails dd ul {
   position: relative;
   top: 17px;
   float: left;
@@ -176,7 +176,7 @@ body.game-list-page .listViewItemDetails dd ul {
   list-style: none;
 }
 
-body.game-list-page .listViewItemDetails dd li {
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails dd li {
   position: relative;
   width: 110px;
   margin: 0 0 1px;
@@ -185,13 +185,13 @@ body.game-list-page .listViewItemDetails dd li {
   font-size: 11px;
 }
 
-body.game-list-page .listViewItemDetails dd li em {
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails dd li em {
   display: block;
   font-style: normal;
   line-height: 13px;
 }
 
-body.game-list-page .listViewItemDetails dd li::before {
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails dd li::before {
   position: absolute;
   top: 0;
   left: 4px;
@@ -204,61 +204,61 @@ body.game-list-page .listViewItemDetails dd li::before {
   background-size: 35px 250px;
 }
 
-body.game-list-page .slaveItemValue_income::before { background-position: 0 -100px; }
-body.game-list-page .enhanceItemValue_attack::before { background-position: 0 0; }
-body.game-list-page .enhanceItemValue_defence::before { background-position: 0 -50px; }
-body.game-list-page .listViewItemDetails dd li.unlockLevelValue::before {
+:is(body.game-list-page, .calculator-vassals) .slaveItemValue_income::before { background-position: 0 -100px; }
+:is(body.game-list-page, .calculator-vassals) .enhanceItemValue_attack::before { background-position: 0 0; }
+:is(body.game-list-page, .calculator-vassals) .enhanceItemValue_defence::before { background-position: 0 -50px; }
+:is(body.game-list-page, .calculator-vassals) .listViewItemDetails dd li.unlockLevelValue::before {
   background-image: url("../images/game/source/mobilemiddleages/img/icons/icon_xp_2x.png");
   background-position: center;
   background-size: 28px 28px;
 }
-body.game-list-page .slaveItemValue strong { color: #e6a64c; }
-body.game-list-page .unlockLevelValue strong { color: #e6a64c; }
+:is(body.game-list-page, .calculator-vassals) .slaveItemValue strong { color: #e6a64c; }
+:is(body.game-list-page, .calculator-vassals) .unlockLevelValue strong { color: #fff; }
 
-body.game-list-page[data-page="vassals"] .listViewItemDetails dd li {
+:is(body.game-list-page, .calculator-vassals)[data-page="vassals"] .listViewItemDetails dd li {
   margin-bottom: 0;
   padding-top: 2px;
   padding-bottom: 2px;
   min-height: 28px;
 }
 
-body.game-list-page[data-page="vassals"] .listViewItemDetails dd li::before {
+:is(body.game-list-page, .calculator-vassals)[data-page="vassals"] .listViewItemDetails dd li::before {
   width: 32px;
   height: 32px;
   background-size: 32px 228.57px;
 }
 
-body.game-list-page[data-page="vassals"] .listViewItemDetails dd li.enhanceItemValue_attack::before {
+:is(body.game-list-page, .calculator-vassals)[data-page="vassals"] .listViewItemDetails dd li.enhanceItemValue_attack::before {
   background-position: 0 0;
 }
 
-body.game-list-page[data-page="vassals"] .listViewItemDetails dd li.enhanceItemValue_defence::before {
+:is(body.game-list-page, .calculator-vassals)[data-page="vassals"] .listViewItemDetails dd li.enhanceItemValue_defence::before {
   background-position: 0 -45.71px;
 }
 
-body.game-list-page[data-page="vassals"] .listViewItemDetails dd li.slaveItemValue_income::before {
+:is(body.game-list-page, .calculator-vassals)[data-page="vassals"] .listViewItemDetails dd li.slaveItemValue_income::before {
   background-position: 0 -91.43px;
 }
 
-body.game-list-page[data-page="vassals"] .listViewItemDetails dd li.unlockLevelValue::before {
+:is(body.game-list-page, .calculator-vassals)[data-page="vassals"] .listViewItemDetails dd li.unlockLevelValue::before {
   background-size: 26px 26px;
 }
 
-body.game-list-page .enhancement_item10001 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10001_2x.jpg"); }
-body.game-list-page .enhancement_item10002 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10002_2x.jpg"); }
-body.game-list-page .enhancement_item10003 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10003_2x.jpg"); }
-body.game-list-page .enhancement_item10004 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10004_2x.jpg"); }
-body.game-list-page .enhancement_item10005 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10005_2x.jpg"); }
-body.game-list-page .enhancement_item10006 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10006_2x.jpg"); }
-body.game-list-page .enhancement_item10007 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10007_2x.jpg"); }
-body.game-list-page .enhancement_item10008 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10008_2x.jpg"); }
-body.game-list-page .enhancement_item10009 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10009_2x.jpg"); }
-body.game-list-page .enhancement_item10010 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10010_2x.jpg"); }
-body.game-list-page .enhancement_item10011 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10011_2x.jpg"); }
-body.game-list-page .enhancement_item10012 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10012_2x.jpg"); }
-body.game-list-page .enhancement_item10013 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10013_2x.jpg"); }
-body.game-list-page .enhancement_item10014 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10014_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10001 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10001_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10002 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10002_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10003 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10003_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10004 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10004_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10005 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10005_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10006 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10006_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10007 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10007_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10008 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10008_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10009 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10009_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10010 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10010_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10011 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10011_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10012 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10012_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10013 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10013_2x.jpg"); }
+:is(body.game-list-page, .calculator-vassals) .enhancement_item10014 { background-image: url("../images/game/source/mobilemiddleages/img/enhancement/10014_2x.jpg"); }
 
 @media (max-width: 520px) {
-  body.game-list-page .game-list-main { padding: 10px; }
+  :is(body.game-list-page, .calculator-vassals) .game-list-main { padding: 10px; }
 }

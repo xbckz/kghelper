@@ -8,57 +8,39 @@
   <meta name="description" content="Find the best vassal income for your silver budget in Knight Game.">
   <title>Best Value Vassals Calc — Knight Game Helper</title>
   <link rel="icon" href="assets/images/game/source/mobilemiddleages/img/factions/faction1_logo.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/site.css">
-  <link rel="stylesheet" href="assets/css/site-fixes.css">
-  <link rel="stylesheet" href="assets/css/kg-assets.css?v=20261106-5">
-  <link rel="stylesheet" href="assets/css/income-calculators.css?v=20261107-1">
-  <script src="scripts/site.js?v=20261107-1" defer></script>
-  <script src="scripts/income-calculators.js?v=20261107-1" defer></script>
+  <link rel="stylesheet" href="assets/css/site.css?v=20261107-11">
+  <link rel="stylesheet" href="assets/css/site-fixes.css?v=20261107-11">
+  <link rel="stylesheet" href="assets/css/kg-assets.css?v=20261107-11">
+  <link rel="stylesheet" href="assets/css/game-list.css?v=20261107-11">
+  <link rel="stylesheet" href="assets/css/income-calculators.css?v=20261107-11">
+  <script src="scripts/site.js?v=20261107-11" defer></script>
+  <script src="scripts/vassal-cards.js?v=20261107-11" defer></script>
+  <script src="scripts/vassal-math.js?v=20261107-11" defer></script>
+  <script src="scripts/income-calculators.js?v=20261107-11" defer></script>
+  <script src="scripts/number-format.js?v=20261107-11" defer></script>
+  <script src="scripts/calculator-details.js?v=20261107-11" defer></script>
 </head>
 <body data-page="bestValueIncome" data-root="./">
   <a class="skip-link" href="#main">Skip to content</a>
   <div data-site-header></div>
-  <main id="main" class="page-main">
+  <main id="main" class="page-main income-calculator">
     <header class="page-description">
-      <div>
-        <h1>Best Value Vassals Calc</h1>
-        <p>Spend a silver budget on the vassals that add the most income for their next purchase price.</p>
-      </div>
+      <h1>Best Value Vassals Calculator</h1>
+      <p>Enter the amount of vassals you own, your budget, and get the most efficient plan for you.</p>
+      <button type="button" class="sheet-toggle" id="sheet-toggle" aria-expanded="true" aria-controls="vassal-sheet"><span>Show Vassals:</span><span class="toggle-status" aria-hidden="true"></span></button>
     </header>
-
-    <div class="listView income-calculator">
-      <section class="listViewItem calculator-section" aria-labelledby="vassal-list-heading">
-        <div class="calculator-section-heading">
-          <h2 id="vassal-list-heading">Your vassals</h2>
-          <p>Counts start with the values from your table. Edit them and mark which vassals you can currently recruit. Your counts and availability are saved in this browser and shared with Price Prediction Income.</p>
-        </div>
-
-        <form data-best-value-form novalidate>
-          <div class="calculator-controls">
-            <label class="calculator-field" for="budget">
-              <span>Budget in silver</span>
-              <input id="budget" name="budget" type="text" inputmode="numeric" autocomplete="off" placeholder="Enter your budget" aria-describedby="budget-help" required>
-            </label>
-            <button class="button calculator-button" type="submit">Calculate best value</button>
-          </div>
-          <p class="calculator-hint" id="budget-help">The plan buys one vassal at a time, choosing the best income per silver until the budget is spent.</p>
-
-          <div class="table-wrap vassal-table-wrap">
-            <table class="data-table vassal-table">
-              <caption class="visually-hidden">Owned vassals, their income, next purchase prices, and recruitable status</caption>
-              <thead>
-                <tr><th scope="col">Vassal</th><th scope="col" class="income-column">Income each</th><th scope="col" class="price-column">Next price</th><th scope="col" class="owned-column">Owned</th><th scope="col" class="available-column">Recruitable</th></tr>
-              </thead>
-              <tbody data-vassal-rows>
-                <tr><td colspan="5">Loading vassals…</td></tr>
-              </tbody>
-            </table>
-          </div>
+    <div class="calculator-sheet calculator-vassals" id="vassal-sheet"><div class="game-list-main"><ul class="listView" data-vassal-rows aria-label="Your vassals"></ul></div></div>
+    <div class="listView">
+      <section class="listViewItem calculator-section">
+        <div class="calculator-section-heading"><span class="silver-icon" aria-hidden="true"></span><h2>Set Your Budget</h2></div>
+        <p class="calculator-instructions">Enter your budget to calculate the best vassal plan. Don't forget to disable vassals you don't have unlocked yet!<br><br>*Note that after making a calculation, the new values will be stored so you don't have to set the vassal numbers every time.</p>
+        <form data-best-value-form class="calculator-controls" novalidate>
+          <input id="budget" type="text" inputmode="numeric" data-number-format autocomplete="off" placeholder="Enter budget" aria-label="Budget in silver" required>
+          <button class="button" type="submit">Calculate</button>
         </form>
-
-        <section class="result-panel calculator-results" id="best-plan" aria-labelledby="best-plan-heading" aria-live="polite" aria-atomic="false">
-          <h2 id="best-plan-heading">Best plan</h2>
-          <div id="best-plan-content">Your recommended vassals will appear here after you set a budget.</div>
+        <section class="calculator-results" id="best-plan" aria-labelledby="best-plan-heading" aria-live="polite">
+          <h2 id="best-plan-heading">Best Plan</h2>
+          <div id="best-plan-content">Your recommended vassals will appear here after setting the budget.</div>
         </section>
       </section>
     </div>
