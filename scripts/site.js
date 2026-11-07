@@ -13,7 +13,7 @@
     vassals: { title: "Vassals", label: "Vassals", path: "vassals/" },
     basics: { title: "Basics", label: "Basics", path: "tips/" },
     tools: { title: "Tools", label: "Tools", path: "tools/" },
-    bestValueIncome: { title: "Best Value Income Calc", label: "Best Income Calc", path: "tools/best-value-income/" },
+    bestValueIncome: { title: "Best Value Vassals", label: "Best Value Vassals", path: "tools/best-value-income/" },
     bestArmy: { title: "Best Army Calc", label: "Best Army Calc", path: "tools/best-army/" },
     priceIncome: { title: "Price Prediction Income", label: "Price Predict (Income)", path: "tools/price-prediction-income/" }
   };

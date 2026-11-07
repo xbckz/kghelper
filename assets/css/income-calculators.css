@@ -1,0 +1,383 @@
+/* Income calculators retain the Knight panels, textures, and blue game buttons. */
+.income-calculator {
+  width: min(100%, 1120px) !important;
+  max-width: 1120px;
+  margin: 0 auto 20px !important;
+  padding: 0;
+  overflow: visible;
+}
+
+.income-calculator > .calculator-section {
+  float: none;
+  clear: both;
+  width: 100% !important;
+  max-width: 100%;
+  margin: 0;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.calculator-section-heading {
+  max-width: 72ch;
+  margin: 0 0 18px;
+}
+
+.calculator-section-heading h2,
+.calculator-results h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font: bold 20px/1.25 'Times New Roman', serif;
+  text-shadow: 0 1px 1px #000;
+}
+
+.calculator-section-heading p,
+.calculator-hint {
+  margin: 0;
+  color: #e2d8ca;
+  font: 14px/1.5 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+.calculator-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px;
+  margin: 0 0 8px;
+}
+
+.calculator-field {
+  display: flex;
+  flex: 0 1 250px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  width: 250px;
+  max-width: 100%;
+  margin: 0;
+  color: #fff;
+}
+
+.calculator-field > span {
+  min-width: 0;
+  color: #f0e3d2;
+  font: bold 13px/1.3 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+.calculator-field input {
+  width: 100%;
+  height: 40px;
+  padding: 7px 10px;
+  border: 1px solid #9d8b77;
+  border-radius: 3px;
+  outline: none;
+  color: #171513;
+  background: hsl(0, 0%, 93%);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+  font: 16px/1.3 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.calculator-field input:focus-visible,
+.owned-input:focus-visible {
+  outline: 2px solid #73b9ed;
+  outline-offset: 2px;
+}
+
+.calculator-field-bonus { flex-basis: 170px; width: 170px; }
+
+.calculator-button {
+  min-height: 40px;
+  padding: 9px 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.calculator-hint {
+  margin: 0 0 16px;
+  font-size: 12px;
+}
+
+.vassal-table-wrap {
+  margin: 8px 0 18px;
+  overflow-x: auto;
+  border: 1px solid rgba(0,0,0,.72);
+  scrollbar-color: #725e49 #18120f;
+}
+
+.vassal-table {
+  width: 100%;
+  min-width: 650px;
+  margin: 0;
+  border-collapse: collapse;
+  color: #fff;
+  background: rgba(20,14,10,.65);
+  font: 13px/1.35 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.vassal-table th,
+.vassal-table td {
+  padding: 7px 9px;
+  border: 1px solid rgba(255,255,255,.16);
+  vertical-align: middle;
+}
+
+.vassal-table thead th {
+  color: #f4e6d4;
+  background: rgba(24,18,14,.96);
+  font: bold 12px/1.3 'Trebuchet MS', 'Segoe UI', sans-serif;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.vassal-table tbody tr:nth-child(even) { background: rgba(255,255,255,.035); }
+.vassal-table tbody tr.vassal-unavailable { color: #c6b8a9; background: rgba(0,0,0,.23); }
+.vassal-table .numeric-cell { text-align: right; white-space: nowrap; }
+.vassal-table .owned-column { width: 128px; text-align: right; }
+.vassal-table .available-column { width: 108px; text-align: center; }
+.vassal-table .income-column { width: 112px; text-align: right; }
+.vassal-table .price-column { width: 170px; text-align: right; }
+
+.vassal-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 150px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.vassal-name img {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.28);
+}
+
+.mobile-vassal-meta { display: none; }
+
+.owned-input {
+  width: 108px;
+  max-width: 100%;
+  min-height: 34px;
+  padding: 5px 7px;
+  border: 1px solid #93816d;
+  border-radius: 3px;
+  outline: none;
+  color: #171513;
+  background: #eee;
+  font: 14px/1.3 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.available-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  min-height: 34px;
+  cursor: pointer;
+}
+
+.available-control input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #348bd2;
+  cursor: pointer;
+}
+
+.available-control input:focus-visible {
+  outline: 2px solid #73b9ed;
+  outline-offset: 3px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.calculator-results {
+  margin: 18px 0 0;
+  padding: 15px;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 3px;
+  color: #fff;
+  background: rgba(0,0,0,.32);
+}
+
+.calculator-results h2 { margin-bottom: 12px; }
+.calculator-results > div { color: #f1e9df; }
+
+.calculator-plan-cards > h3 {
+  margin: 0 0 10px;
+  color: #f0e3d2;
+  font: bold 15px/1.3 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+.income-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+  gap: 8px;
+  align-items: stretch;
+}
+
+.income-plan-card {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  column-gap: 8px;
+  min-width: 0;
+  min-height: 72px;
+  padding: 6px;
+  border: 1px solid rgba(255,255,255,.17);
+  border-radius: 2px;
+  color: #fff;
+  background: rgba(35,24,17,.83);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.income-plan-card:hover,
+.income-plan-card:focus-visible,
+.income-plan-card[aria-expanded="true"] {
+  border-color: #d3a15f;
+  background: rgba(58,39,25,.96);
+}
+
+.income-plan-card:focus-visible { outline: 2px solid #73b9ed; outline-offset: 2px; }
+
+.income-plan-card img {
+  grid-row: 1 / 3;
+  display: block;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  background: rgba(0,0,0,.25);
+}
+
+.income-plan-name {
+  align-self: end;
+  overflow-wrap: anywhere;
+  color: #f6eadb;
+  font: bold 12px/1.2 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+.income-plan-quantity {
+  align-self: start;
+  color: #fff;
+  font: bold 14px/1.2 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.income-plan-detail {
+  max-width: 680px;
+  margin: 10px 0 0;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,.17);
+  color: #fff;
+  background: rgba(17,12,9,.82);
+}
+
+.income-plan-detail h3 {
+  margin: 0 0 8px;
+  color: #f2d4a8;
+  font: bold 16px/1.3 'Times New Roman', serif;
+}
+
+.income-plan-detail dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px 18px; margin: 0; }
+.income-plan-detail dl > div { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,.1); }
+.income-plan-detail dt { color: #d9cabc; }
+.income-plan-detail dd { margin: 0; color: #fff; font-weight: bold; text-align: right; font-variant-numeric: tabular-nums; }
+
+.income-summary {
+  display: grid;
+  gap: 5px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 16px 0 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(211,161,95,.48);
+  color: #fff;
+  background: rgba(0,0,0,.3);
+  font: 13px/1.45 'Trebuchet MS', 'Segoe UI', sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.income-summary p { margin: 0; }
+.income-summary span { color: #e5c99f; }
+
+.calculator-message {
+  margin: 0;
+  color: #f0e3d2;
+  font: 14px/1.5 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+.calculator-message.is-error { color: #ffd2c7; }
+.calculator-message.is-note { margin-top: 12px; color: #f0d49c; }
+
+.current-income-line {
+  margin: 0 0 16px;
+  padding: 9px 11px;
+  border: 1px solid rgba(255,255,255,.14);
+  color: #f4e6d4;
+  background: rgba(0,0,0,.25);
+  font: 14px/1.45 'Trebuchet MS', 'Segoe UI', sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 700px) {
+  .income-calculator > .calculator-section { padding: 14px 10px; }
+  .calculator-controls { align-items: stretch; }
+  .calculator-field { flex: 1 1 210px; width: 100%; }
+  .calculator-field-bonus { flex: 1 1 125px; width: 125px; }
+  .calculator-button { align-self: end; }
+  .vassal-table { min-width: 0; table-layout: fixed; }
+  .vassal-table .income-column,
+  .vassal-table .price-column { display: none; }
+  .vassal-table th:first-child { width: auto; }
+  .vassal-table .owned-column { width: 108px; }
+  .vassal-table .available-column { width: 94px; }
+  .vassal-name { min-width: 0; gap: 7px; }
+  .vassal-name img { flex-basis: 32px; width: 32px; height: 32px; }
+  .vassal-table th,
+  .vassal-table td { padding: 6px 5px; }
+  .owned-input { width: 96px; }
+  .mobile-vassal-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 8px;
+    margin: 4px 0 0 39px;
+    color: #d5c5b3;
+    font-size: 11px;
+    line-height: 1.35;
+  }
+  .mobile-vassal-meta strong { color: #fff; font-weight: normal; font-variant-numeric: tabular-nums; }
+  .income-plan-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .income-plan-card { grid-template-columns: 44px minmax(0, 1fr); min-height: 64px; padding: 5px; column-gap: 6px; }
+  .income-plan-card img { width: 44px; height: 44px; }
+  .income-plan-detail dl { grid-template-columns: 1fr; }
+  .income-summary { width: auto; }
+}
+
+@media (max-width: 380px) {
+  .calculator-field,
+  .calculator-field-bonus { flex-basis: 100%; width: 100%; }
+  .vassal-table .owned-column { width: 94px; }
+  .vassal-table .available-column { width: 76px; }
+  .owned-input { width: 84px; padding-inline: 4px; }
+  .available-control { min-width: 30px; }
+  .income-plan-grid { grid-template-columns: 1fr; }
+}
